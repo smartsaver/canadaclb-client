@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 import Burger from './Burger'
 
-const Navbar = ({ isActive, onBurgerClick, navbarEnd, navbarBrand }) => {
+const Navbar = ({
+  isActive,
+  onBurgerClick,
+  navbarEnd,
+  navbarBrand,
+  className,
+}) => {
   const isMenuActive = isActive ? 'is-active' : ''
   return (
-    <nav className="navbar">
+    <nav className={`navbar Navbar ${className}`}>
       <div className="container">
         <div className="navbar-brand">
           {navbarBrand}
@@ -53,10 +59,11 @@ class NavbarContainer extends Component {
   }
 
   render() {
-    const { navbarEnd = null, navbarBrand = null } = this.props
+    const { navbarEnd = null, navbarBrand = null, className = '' } = this.props
     return (
       <header>
         <Navbar
+          className={className}
           isActive={this.state.isActive}
           onBurgerClick={this.handleOnBurgerClick}
           navbarEnd={navbarEnd}
