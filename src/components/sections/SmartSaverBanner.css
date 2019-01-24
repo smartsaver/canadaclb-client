@@ -1,0 +1,84 @@
+.SmartSaverBanner,
+.Banner__container {
+  min-height: 31rem;
+}
+
+@media (max-width: 768px) {
+  .SmartSaverBanner {
+    position: relative;
+  }
+}
+
+/* Fix some horizontal scroll bug by bulma columns */
+.SmartSaverBanner .columns {
+  margin: 0;
+}
+
+.Banner__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SmartSaverBanner,
+.Banner__container,
+.Banner__container .Title__column,
+.SmartSaverBanner .columns {
+  min-height: 94vh;
+}
+
+@media (min-width: 769px) {
+  .SmartSaverBanner,
+  .Banner__container,
+  .Banner__container .Title__column,
+  .SmartSaverBanner .columns {
+    min-height: 31rem;
+  }
+}
+
+.Title__column {
+  padding: 3rem 2rem;
+}
+
+@media (min-width: 769px) {
+  /* increase padding in mobile */
+  .Title__column {
+    padding: 3rem 4rem;
+  }
+}
+
+.Title__column h1,
+.Title__column p {
+  color: whitesmoke;
+  text-shadow: 1px 2px 7px black;
+}
+
+@media (min-width: 769px) {
+  .Title__column h1,
+  .Title__column p {
+    color: #003b59;
+    text-shadow: 1px 2px 4px #0000001f;
+  }
+}
+
+.Title__footer {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  /* put a cover image only on mobile and below */
+  .ColumnWithMobileImage {
+    background: url('../../images/header-image-no-fade-overlay.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .SmartSaverBanner .ColumnWithImage {
+    background: url('../../images/header-image-fade-left.png') no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-position-y: top;
+  }
+}
