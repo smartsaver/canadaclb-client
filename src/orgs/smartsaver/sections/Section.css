@@ -1,0 +1,20 @@
+.Section--Smartsaver-theme .title,
+.Section--Smartsaver-theme .content,
+.Section--Smartsaver-theme strong {
+  color: #003b59;
+}
+
+.SmartsaverSection .content {
+  font-size: 1.1rem;
+}
+
+.SmartsaverSection:nth-child(2n) {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 769px) {
+  .SmartsaverSection.section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
