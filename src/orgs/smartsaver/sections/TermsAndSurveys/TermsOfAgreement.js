@@ -9,10 +9,7 @@ const TermsOfAgreement = ({ onSubmit, isAccepted }) => {
   const isFormHidden = isAccepted ? 'is-hidden' : ''
   const isSuccessHidden = !isAccepted ? 'is-hidden' : ''
   return (
-    <Section
-      name="terms-of-agreement"
-      className={`${style.TermsOfAgreement} Section--Smartsaver-theme`}
-    >
+    <Section name="terms-of-agreement" className={`${style.TermsOfAgreement}`}>
       <div className="content" dangerouslySetInnerHTML={{ __html: intro }} />
       <article
         className="box content"

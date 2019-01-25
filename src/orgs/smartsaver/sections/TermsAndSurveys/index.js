@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import TermsOfAgreementSection from './TermsOfAgreement'
+import FeedbackSurvey from './FeedbackSurvey'
+import EmailSurvey from './EmailSurvey'
 
 class TermsAndSurveys extends Component {
   state = {
@@ -22,6 +24,8 @@ class TermsAndSurveys extends Component {
           onSubmit={handleTermsOfAgreementSubmit}
           isAccepted={isTermsOfAgreementAccepted}
         />
+        <FeedbackSurvey isEnabled={isTermsOfAgreementAccepted} />
+        <EmailSurvey isEnabled={isTermsOfAgreementAccepted} />
       </div>
     )
   }
