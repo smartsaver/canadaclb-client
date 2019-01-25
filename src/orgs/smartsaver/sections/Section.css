@@ -1,6 +1,12 @@
 .Section--Smartsaver-theme .title,
 .Section--Smartsaver-theme .content,
-.Section--Smartsaver-theme strong {
+.Section--Smartsaver-theme strong,
+.Section--Smartsaver-theme h1,
+.Section--Smartsaver-theme h2,
+.Section--Smartsaver-theme h3,
+.Section--Smartsaver-theme h4,
+.Section--Smartsaver-theme h5,
+.Section--Smartsaver-theme h6 {
   color: #003b59;
 }
 

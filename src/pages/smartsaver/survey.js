@@ -1,10 +1,13 @@
 import React from 'react'
 import SmartsaverLayout from '../../orgs/smartsaver/Layout'
+import IntroSection from '../../orgs/smartsaver/sections/IntroSection'
+import TermsAndSurveysSection from '../../orgs/smartsaver/sections/TermsAndSurveys'
 
 const surveyPage = () => {
   return (
     <SmartsaverLayout>
-      <h1 className="title">Smartsaver Survey</h1>
+      <IntroSection />
+      <TermsAndSurveysSection />
     </SmartsaverLayout>
   )
 }
