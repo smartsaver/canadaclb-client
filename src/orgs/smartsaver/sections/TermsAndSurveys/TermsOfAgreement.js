@@ -12,7 +12,7 @@ const TermsOfAgreement = ({ onSubmit, isAccepted }) => {
     <Section name="terms-of-agreement" className={`${style.TermsOfAgreement}`}>
       <div className="content" dangerouslySetInnerHTML={{ __html: intro }} />
       <article
-        className="box content"
+        className={`box content ${style.box}`}
         dangerouslySetInnerHTML={{ __html: termsOfAgreement }}
       />
       <form onSubmit={onSubmit} className={isFormHidden}>
