@@ -2,6 +2,8 @@ import React from 'react'
 import SurveyForm from '../../../../components/SurveyForm'
 import Section from '../Section'
 import emailSurveyContent from '../../content/emailSurveyContent'
+import Form from '../../../../components/Form'
+import FieldControl from '../../../../components/Form/FormFieldControl'
 
 const EmailSurvey = ({ isEnabled }) => {
   const { intro } = emailSurveyContent
@@ -12,7 +14,26 @@ const EmailSurvey = ({ isEnabled }) => {
         isEnabled={isEnabled}
         overlayText="Read and agree to the terms of agreement before proceeding"
       >
-        MailChimpCapture
+        <div className="columns">
+          <div className="column is-half">
+            <Form name="email-form">
+              <FieldControl>
+                <label htmlFor="email-form-name" className="label">
+                  Email:
+                </label>
+                <input
+                  className="input"
+                  type="email"
+                  id="email-form-name"
+                  placeholder="Enter email..."
+                />
+              </FieldControl>
+              <button className="button" type="submit">
+                Submit
+              </button>
+            </Form>
+          </div>
+        </div>
       </SurveyForm>
     </Section>
   )
