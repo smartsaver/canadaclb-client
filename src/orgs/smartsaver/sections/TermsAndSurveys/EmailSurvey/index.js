@@ -4,6 +4,7 @@ import Section from '../../Section'
 import emailSurveyContent from '../../../content/emailSurveyContent'
 import EmailSurveyForm from './EmailSurveyForm'
 import Notification from '../../../../../components/Notification'
+import axios from 'axios'
 import PropTypes from 'prop-types'
 
 class EmailSurvey extends Component {
@@ -24,17 +25,45 @@ class EmailSurvey extends Component {
     this.setState(() => ({ isFormError: boolValue }))
   }
 
-  handleFormSuccess = ({ success, state }) => {
+  sendMailToSmartsaver = async ({ email }) => {
+    console.log('sending email..', email)
+    /* eslint-disable no-undef, no-console */
+    const baseURL = process.env.GATSBY_MAIL_SERVER_URL
+    const to = process.env.GATBSY_MYFUTURESAVER_EMAIL
+    const data = {
+      from: 'Myfuturesaver.org <noreply@myfuturesaver.org>',
+      to,
+      subject: 'Past StartMyRESP Applicant Survey',
+      text: `
+A past StartMyRESP applicant has submitted their survey on CanadaCLB.ca/SmartSAVER/survey
+
+See Below.
+email: ${email}
+`,
+    }
+    try {
+      await axios({
+        method: 'post',
+        baseURL,
+        url: '/success',
+        data,
+      })
+    } catch (error) {
+      console.log(error.response)
+    }
+  }
+
+  handleFormSuccess = ({ formData }) => {
     this.setIsFormSuccess(true)
     this.setIsFormError(false)
-    // sendMailToSmartsaver();
+    this.sendMailToSmartsaver(formData)
     // sendApplicantSuccessMail();
   }
 
-  handleFormError = ({ error }) => {
+  handleFormError = ({ errorMessages }) => {
     this.setIsFormError(true)
-    if (!error) return
-    this.setState(() => ({ errorMessage: error[0].error }))
+    if (!errorMessages) return
+    this.setState(() => ({ errorMessage: errorMessages[0].error }))
   }
 
   render() {

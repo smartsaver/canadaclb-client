@@ -8,7 +8,7 @@ import { mailchimp } from '../../../configs'
 class EmailSurveyForm extends Component {
   state = {
     isLoading: false,
-    email: 'hello@example.com',
+    email: 'j_cunanan05@yahoo.com',
     isSuccess: false,
   }
 
@@ -50,7 +50,7 @@ class EmailSurveyForm extends Component {
 
   addToMailingList = ({ email }) => {
     /* eslint-disable no-undef */
-    const baseURL = process.env.GATSBY_MAILCHIMP_SERVER_URL
+    const baseURL = process.env.GATSBY_MAIL_SERVER_URL
     const listId = mailchimp.listId
     return new Promise((resolve, reject) => {
       axios({
@@ -68,7 +68,7 @@ class EmailSurveyForm extends Component {
     // set success state
     this.setState(() => ({ isSuccess: true }))
     // call success hooks outside the component
-    this.props.onSuccess(success)
+    this.props.onSuccess({ success, formData: this.state })
     // reset the form
     this.resetFormData()
   }
