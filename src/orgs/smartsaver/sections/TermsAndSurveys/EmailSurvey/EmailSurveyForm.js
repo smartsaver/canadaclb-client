@@ -51,7 +51,7 @@ class EmailSurveyForm extends Component {
   addToMailingList = ({ email }) => {
     /* eslint-disable no-undef */
     const baseURL = process.env.GATSBY_MAIL_SERVER_URL
-    const listId = mailchimp.listId
+    const listId = mailchimp.pastApplicantListId
     return new Promise((resolve, reject) => {
       axios({
         method: 'post',
@@ -80,7 +80,7 @@ class EmailSurveyForm extends Component {
   }
 
   handleFormErrors = error => {
-    this.props.onError(error.data)
+    this.props.onError(error)
   }
 
   handleEmailChange = event => {

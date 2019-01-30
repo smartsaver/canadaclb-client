@@ -95,10 +95,10 @@ The SmartSAVER Team
     this.sendApplicantSuccessMail(formData)
   }
 
-  handleFormError = ({ errorMessages }) => {
+  handleFormError = ({ error }) => {
     this.setIsFormError(true)
-    if (!errorMessages) return
-    this.setState(() => ({ errorMessage: errorMessages[0].error }))
+    if (!error) return
+    this.setState(() => ({ errorMessage: error[0].error }))
   }
 
   render() {
