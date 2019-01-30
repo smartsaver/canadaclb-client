@@ -26,7 +26,6 @@ class EmailSurvey extends Component {
   }
 
   sendMailToSmartsaver = async ({ email }) => {
-    console.log('sending email..', email)
     /* eslint-disable no-undef, no-console */
     const baseURL = process.env.GATSBY_MAIL_SERVER_URL
     const to = process.env.GATSBY_MYFUTURESAVER_EMAIL
@@ -49,12 +48,12 @@ email: ${email}
         data,
       })
     } catch (error) {
-      console.log(error.response)
+      if (!error.response) console.log(error)
+      console.log(error.response.data)
     }
   }
 
   sendApplicantSuccessMail = async ({ email }) => {
-    console.log('sending email..', email)
     /* eslint-disable no-undef, no-console */
     const baseURL = process.env.GATSBY_MAIL_SERVER_URL
     const data = {
@@ -84,7 +83,8 @@ The SmartSAVER Team
         data,
       })
     } catch (error) {
-      console.log(error.response)
+      if (!error.response) console.log(error)
+      console.log(error.response.data)
     }
   }
 
@@ -95,10 +95,10 @@ The SmartSAVER Team
     this.sendApplicantSuccessMail(formData)
   }
 
-  handleFormError = ({ errorMessages }) => {
+  handleFormError = ({ error }) => {
     this.setIsFormError(true)
-    if (!errorMessages) return
-    this.setState(() => ({ errorMessage: errorMessages[0].error }))
+    if (error instanceof Array) return
+    this.setState(() => ({ errorMessage: error[0].error }))
   }
 
   render() {

@@ -8,7 +8,7 @@ import { mailchimp } from '../../../configs'
 class EmailSurveyForm extends Component {
   state = {
     isLoading: false,
-    email: 'j_cunanan05@yahoo.com',
+    email: '',
     isSuccess: false,
   }
 
@@ -51,7 +51,7 @@ class EmailSurveyForm extends Component {
   addToMailingList = ({ email }) => {
     /* eslint-disable no-undef */
     const baseURL = process.env.GATSBY_MAIL_SERVER_URL
-    const listId = mailchimp.listId
+    const listId = mailchimp.pastApplicantListId
     return new Promise((resolve, reject) => {
       axios({
         method: 'post',
@@ -59,8 +59,14 @@ class EmailSurveyForm extends Component {
         url: '/subscriber/new',
         data: { email, listId },
       })
-        .then(success => resolve(success))
-        .catch(error => reject(error.response))
+        .then(success => {
+          if (!success.data) return resolve(success)
+          return resolve(success.data)
+        })
+        .catch(error => {
+          if (!error.response) return reject(error)
+          return reject(error.response.data)
+        })
     })
   }
 
@@ -74,7 +80,7 @@ class EmailSurveyForm extends Component {
   }
 
   handleFormErrors = error => {
-    this.props.onError(error.data)
+    this.props.onError(error)
   }
 
   handleEmailChange = event => {
