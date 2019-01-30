@@ -97,7 +97,7 @@ The SmartSAVER Team
 
   handleFormError = ({ error }) => {
     this.setIsFormError(true)
-    if (!error) return
+    if (error instanceof Array) return
     this.setState(() => ({ errorMessage: error[0].error }))
   }
 
