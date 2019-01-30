@@ -3,7 +3,7 @@ const DEVELOPMENT = process.env.NODE_ENV === 'development'
 const STAGING = process.env.GATSBY_DEPLOYMENT_ENV === 'staging'
 // production config for mailchimp
 let mailchimp = {
-  pastApplicantListId: 'fe3e30ebf9',
+  pastApplicantListId: '6c53c2d1cd',
 }
 
 if (DEVELOPMENT || STAGING) {
