@@ -8,7 +8,7 @@ import { mailchimp } from '../../../configs'
 class EmailSurveyForm extends Component {
   state = {
     isLoading: false,
-    email: 'j_cunanan05@yahoo.com',
+    email: '',
     isSuccess: false,
   }
 
@@ -59,8 +59,14 @@ class EmailSurveyForm extends Component {
         url: '/subscriber/new',
         data: { email, listId },
       })
-        .then(success => resolve(success))
-        .catch(error => reject(error.response))
+        .then(success => {
+          if (!success.data) return resolve(success)
+          return resolve(success.data)
+        })
+        .catch(error => {
+          if (!error.response) return reject(error)
+          return reject(error.response.data)
+        })
     })
   }
 
