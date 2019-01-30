@@ -29,7 +29,7 @@ class EmailSurvey extends Component {
     console.log('sending email..', email)
     /* eslint-disable no-undef, no-console */
     const baseURL = process.env.GATSBY_MAIL_SERVER_URL
-    const to = process.env.GATBSY_MYFUTURESAVER_EMAIL
+    const to = process.env.GATSBY_MYFUTURESAVER_EMAIL
     const data = {
       from: 'Myfuturesaver.org <noreply@myfuturesaver.org>',
       to: `${to}`,
