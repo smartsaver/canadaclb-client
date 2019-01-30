@@ -107,7 +107,7 @@ The SmartSAVER Team
     const { isFormSuccess, isFormError, errorMessage } = this.state
     const { handleFormSuccess, handleFormError } = this
     return (
-      <Section className="Section--Smartsaver-theme">
+      <Section name="email" className="Section--Smartsaver-theme">
         <div className="content" dangerouslySetInnerHTML={{ __html: intro }} />
         <SurveyForm
           isEnabled={isEnabled}

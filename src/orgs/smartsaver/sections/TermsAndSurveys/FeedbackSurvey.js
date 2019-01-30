@@ -6,7 +6,7 @@ import feedbackSurveyContent from '../../content/feedbackSurveyContent'
 const FeedbackSurvey = ({ isEnabled }) => {
   const { intro, footer } = feedbackSurveyContent
   return (
-    <Section className="Section--Smartsaver-theme">
+    <Section name="survey" className="Section--Smartsaver-theme">
       <div className="content" dangerouslySetInnerHTML={{ __html: intro }} />
       <SurveyForm
         isEnabled={isEnabled}
