@@ -32,7 +32,7 @@ class EmailSurvey extends Component {
     const to = process.env.GATBSY_MYFUTURESAVER_EMAIL
     const data = {
       from: 'Myfuturesaver.org <noreply@myfuturesaver.org>',
-      to,
+      to: `${to}`,
       subject: 'Past StartMyRESP Applicant Survey',
       text: `
 A past StartMyRESP applicant has submitted their survey on CanadaCLB.ca/SmartSAVER/survey
