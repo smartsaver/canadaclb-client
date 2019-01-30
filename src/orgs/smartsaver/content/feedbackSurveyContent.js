@@ -11,6 +11,7 @@ Once you complete the survey a DONE button will appear. Scroll down to the next 
   footer: processMarkdown(`
 Once you complete the survey a DONE button will appear. Scroll down to the next section below: **Enter Email**
   `),
+  surveyUrl: 'https://www.surveymonkey.com/r/5KTQ8Q7',
 }
 
 export default feedbackSurveyContent
