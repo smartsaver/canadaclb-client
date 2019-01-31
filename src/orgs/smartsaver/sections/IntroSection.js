@@ -1,20 +1,12 @@
 import React from 'react'
 import Section from './Section'
-import {
-  introContent,
-  instructionContent,
-  participateContent,
-} from '../content/introContent'
+import Banner from '../sections/Banner'
+import { instructionContent, participateContent } from '../content/introContent'
 
 const IntroSection = () => {
   return (
     <div>
-      <Section className="Section--Smartsaver-theme">
-        <div
-          className="content"
-          dangerouslySetInnerHTML={{ __html: introContent.intro }}
-        />
-      </Section>
+      <Banner />
       <Section className="Section--Smartsaver-theme">
         <div
           className="content"
