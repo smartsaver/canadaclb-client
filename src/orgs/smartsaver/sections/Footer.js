@@ -6,7 +6,7 @@ import footerContent from '../content/footerContent'
 const SmartsaverFooter = () => {
   const { image, intro, otherLinks, footer, contact } = footerContent
   return (
-    <Footer className="Footer--Smartsaver-theme">
+    <Footer name="contact" className="Footer--Smartsaver-theme">
       <div className="columns">
         <div className="column is-half">
           <img src={image} alt="SmartSAVER" />

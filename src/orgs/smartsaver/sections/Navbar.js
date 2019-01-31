@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Navbar from '../../../components/Navbar'
 import NavbarItem from '../../../components/Navbar/NavbarItem'
 import NavbarDropdown from '../../../components/Navbar/NavbarDropdown'
@@ -13,11 +13,14 @@ const SmartsaverNavbar = () => {
         <NavbarItem text={<img src={brandLogo} alt="SmartSAVER" />} href="#" />
       }
       navbarEnd={
-        <NavbarDropdown text="Survey">
-          <NavbarItem text="Terms of Agreement" href="#terms-of-agreement" />
-          <NavbarItem text="Complete the Survey" href="#survey" />
-          <NavbarItem text="Enter Email" href="#email" />
-        </NavbarDropdown>
+        <Fragment>
+          <NavbarDropdown text="Survey">
+            <NavbarItem text="Terms of Agreement" href="#terms-of-agreement" />
+            <NavbarItem text="Complete the Survey" href="#survey" />
+            <NavbarItem text="Enter Email" href="#email" />
+          </NavbarDropdown>
+          <NavbarItem text="Contact" href="#contact" />
+        </Fragment>
       }
     />
   )
