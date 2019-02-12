@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Form from '../../../../../components/Form'
-import FieldControl from '../../../../../components/Form/FormFieldControl'
+import Form from '../../../../../../components/Form'
+import FieldControl from '../../../../../../components/Form/FormFieldControl'
 import axios from 'axios'
 import PropTypes from 'prop-types'
-import { mailchimp } from '../../../configs'
+import { mailchimp } from '../../../../configs'
 
 class EmailSurveyForm extends Component {
   state = {

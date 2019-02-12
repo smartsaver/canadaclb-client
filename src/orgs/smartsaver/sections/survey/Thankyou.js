@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './Section'
-import thankyouSectionContent from '../content/thankYouSectionContent'
+import thankyouSectionContent from '../../content/survey/thankYouSectionContent'
 
 const Thankyou = () => {
   const { intro } = thankyouSectionContent

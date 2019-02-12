@@ -1,10 +1,10 @@
 import React from 'react'
 import SmartsaverLayout from '../../orgs/smartsaver/Layout'
-import IntroSection from '../../orgs/smartsaver/sections/IntroSection'
+import IntroSection from '../../orgs/smartsaver/sections/survey/IntroSection'
 import SEO from '../../components/Seo/SeoWithoutTitleTemplate'
-import TermsAndSurveysSection from '../../orgs/smartsaver/sections/TermsAndSurveys'
-import ThankyouSection from '../../orgs/smartsaver/sections/Thankyou'
-import surveySeoContent from '../../orgs/smartsaver/content/surveySeoContent'
+import TermsAndSurveysSection from '../../orgs/smartsaver/sections/survey/TermsAndSurveys'
+import ThankyouSection from '../../orgs/smartsaver/sections/survey/Thankyou'
+import surveySeoContent from '../../orgs/smartsaver/content/survey/surveySeoContent'
 
 const surveyPage = () => {
   return (

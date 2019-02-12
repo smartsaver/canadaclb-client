@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-import Navbar from './sections/Navbar'
-import Footer from './sections/Footer'
+import Navbar from './sections/survey/Navbar'
+import Footer from './sections/survey/Footer'
 
 const SmartsaverLayout = ({ children }) => {
   return (

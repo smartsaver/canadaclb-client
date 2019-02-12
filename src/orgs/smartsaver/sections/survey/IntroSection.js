@@ -1,7 +1,10 @@
 import React from 'react'
 import Section from './Section'
-import Banner from '../sections/Banner'
-import { instructionContent, participateContent } from '../content/introContent'
+import Banner from '../../sections/survey/Banner'
+import {
+  instructionContent,
+  participateContent,
+} from '../../content/survey/introContent'
 
 const IntroSection = () => {
   return (

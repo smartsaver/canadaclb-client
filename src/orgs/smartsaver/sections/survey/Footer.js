@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from '../../../components/Footer'
+import Footer from '../../../../components/Footer'
 import './Footer.css'
-import footerContent from '../content/footerContent'
+import footerContent from '../../content/survey/footerContent'
 
 const SmartsaverFooter = () => {
   const { image, intro, otherLinks, footer, contact } = footerContent

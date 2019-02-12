@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from '../../../components/Section'
+import Section from '../../../../components/Section'
 import './Section.css'
 
 const SmartsaverSection = ({ children, name = '', className = '' }) => {

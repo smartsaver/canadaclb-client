@@ -1,8 +1,8 @@
 import React from 'react'
 import Section from './Section'
-import logo from '../images/banner.jpg'
+import logo from '../../images/banner.jpg'
 import style from './Banner.module.css'
-import { introContent } from '../content/introContent'
+import { introContent } from '../../content/survey/introContent'
 
 const Banner = () => {
   return (

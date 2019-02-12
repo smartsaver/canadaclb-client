@@ -1,5 +1,5 @@
-import processMarkdown from '../../../libs/marked'
-import image from '../images/logo-small.png'
+import processMarkdown from '../../../../libs/marked'
+import image from '../../images/logo-small.png'
 
 const footer = {
   intro: processMarkdown(`Copyright SmartSAVER.org © 2018. All Rights Reserved.

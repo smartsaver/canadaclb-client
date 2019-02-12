@@ -1,4 +1,4 @@
-import processMarkdown from '../../../libs/marked'
+import processMarkdown from '../../../../libs/marked'
 
 const emailSurveyContent = {
   intro: processMarkdown(`
