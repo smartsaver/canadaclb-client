@@ -13,6 +13,7 @@ const UfilerespLayout = ({ children }) => {
             text={<img className="image" src={logo} alt="UfileRESP" href="#" />}
           />
         }
+        navbarEnd={<NavbarItem text="Apply" href="#apply" />}
       />
       <main>{children}</main>
     </Layout>
