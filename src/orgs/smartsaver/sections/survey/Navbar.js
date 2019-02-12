@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import Navbar from '../../../../components/Navbar'
 import NavbarItem from '../../../../components/Navbar/NavbarItem'
 import NavbarDropdown from '../../../../components/Navbar/NavbarDropdown'
-import brandLogo from '../../images/logo-small.png'
+import brandLogo from '../../../../images/smartsaver/smartsaver-logo-small.png'
 import './Navbar.css'
 
 const SmartsaverNavbar = () => {
