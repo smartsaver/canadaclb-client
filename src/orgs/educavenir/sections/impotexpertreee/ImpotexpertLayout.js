@@ -10,9 +10,11 @@ const ImpotexpertLayout = ({ children }) => {
       <Navbar
         navbarBrand={
           <NavbarItem
-            text={<img src={logo} alt="ImpotExpertREEE" href="#" />}
+            text={<img src={logo} alt="ImpotExpertREEE" />}
+            href="#"
           />
         }
+        navbarEnd={<NavbarItem text="Appliquer" href="#appliquer" />}
       />
       <main>{children}</main>
     </Layout>
