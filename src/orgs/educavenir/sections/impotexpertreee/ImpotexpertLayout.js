@@ -2,15 +2,15 @@ import React from 'react'
 import Layout from '../../../../components/Layout'
 import Navbar from '../../../../components/Navbar'
 import NavbarItem from '../../../../components/Navbar/NavbarItem'
-import logo from '../../../../images/smartsaver/ufile-logo.png'
+import logo from '../../../../images/educavenir/impot-expert-logo.png'
 
-const UfilerespLayout = ({ children }) => {
+const ImpotexpertLayout = ({ children }) => {
   return (
     <Layout>
       <Navbar
         navbarBrand={
           <NavbarItem
-            text={<img className="image" src={logo} alt="UfileRESP" href="#" />}
+            text={<img src={logo} alt="ImpotExpertREEE" href="#" />}
           />
         }
       />
@@ -19,4 +19,4 @@ const UfilerespLayout = ({ children }) => {
   )
 }
 
-export default UfilerespLayout
+export default ImpotexpertLayout
