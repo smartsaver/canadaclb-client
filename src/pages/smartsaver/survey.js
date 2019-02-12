@@ -1,5 +1,5 @@
 import React from 'react'
-import SmartsaverLayout from '../../orgs/smartsaver/Layout'
+import SmartsaverLayout from '../../orgs/smartsaver/sections/SmartsaverLayout'
 import IntroSection from '../../orgs/smartsaver/sections/survey/IntroSection'
 import SEO from '../../components/Seo/SeoWithoutTitleTemplate'
 import TermsAndSurveysSection from '../../orgs/smartsaver/sections/survey/TermsAndSurveys'
