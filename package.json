@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "canadaclb-client",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "front-end code for canadaclb.ca",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jonathan Cunanan <j_cunanan05@yahoo.com>",
   "dependencies": {
     "axios": "^0.18.0",
     "bulma": "^0.7.2",
@@ -23,7 +23,10 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby"
+    "education",
+    "resp",
+    "bonds",
+    "clb"
   ],
   "license": "MIT",
   "scripts": {
@@ -55,7 +58,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jcunanan05/canadaclb-client"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
