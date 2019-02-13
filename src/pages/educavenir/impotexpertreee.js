@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../../orgs/educavenir/sections/impotexpertreee/ImpotexpertLayout'
+import Banner from '../../orgs/educavenir/sections/impotexpertreee/Banner'
 import Section from '../../orgs/educavenir/sections/impotexpertreee/Section'
 import SurveyForm from '../../components/SurveyForm'
 import allContent from '../../orgs/educavenir/content/impotexpertreee/index'
 
-const { applyContent, introContent } = allContent
+const { applyContent, introContent, bannerContent } = allContent
 
 const IntroSection = () => {
   const { content } = introContent
@@ -35,7 +36,7 @@ const ApplySection = () => {
 const ImpotexpertreeePage = () => {
   return (
     <Layout>
-      <h1 className="title">ImpotExpertREEE Page</h1>
+      <Banner content={bannerContent} />
       <IntroSection />
       <ApplySection />
     </Layout>

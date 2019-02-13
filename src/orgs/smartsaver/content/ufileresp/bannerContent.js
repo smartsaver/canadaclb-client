@@ -6,7 +6,7 @@ const bannerContent = {
   content: processMarkdown(`
 Saving is easy with the Canada Learning Bond (CLB). The CLB offers families with modest incomes a simple way to start saving for their children’s education after high school with ___any Registered Education Savings Plan.___
   `),
-  videoEmbed: 'https://youtu.be/ev6ZtfjRdBg',
+  videoUrl: 'https://www.youtube.com/embed/ev6ZtfjRdBg',
 }
 
 export default bannerContent

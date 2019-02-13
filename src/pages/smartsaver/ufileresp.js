@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../../orgs/smartsaver/sections/ufileresp/UfilerespLayout'
 import Section from '../../orgs/smartsaver/sections/ufileresp/Section'
+import Banner from '../../orgs/smartsaver/sections/ufileresp/Banner'
 import SurveyForm from '../../components/SurveyForm'
 import allContent from '../../orgs/smartsaver/content/ufileresp/index'
 
-const { introContent, applyContent } = allContent
+const { introContent, applyContent, bannerContent } = allContent
 
 const IntroSection = () => {
   const { content } = introContent
@@ -35,7 +36,7 @@ const ApplySection = () => {
 const UfilerespPage = () => {
   return (
     <Layout>
-      <h1 className="title">Ufileresp</h1>
+      <Banner content={bannerContent} />
       <IntroSection />
       <ApplySection />
     </Layout>
