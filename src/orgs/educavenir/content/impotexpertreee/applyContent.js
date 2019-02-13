@@ -15,7 +15,7 @@ Des recherches démontrent que de petits montants mis de côté pour les études
 
 3. Les enfants ayant de l’épargne-études entre 1 $ et 499 $ sont trois fois plus susceptibles de poursuivre des études postsecondaires et quatre fois plus susceptibles d’obtenir leur diplôme.
   `),
-  embedUrl: 'http://reeeussite.ca/Impotexpert',
+  embedUrl: 'https://www.educavenir.org/reeeussite/',
   footerContent: processMarkdown(
     "Présenté par UFile et SmartSAVER. Pour plus d'information contactez 1-888-RESP-CLB ou info@smartsaver.org"
   ),
