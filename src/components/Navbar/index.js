@@ -24,6 +24,13 @@ const Navbar = ({
   )
 }
 
+/**
+ * @class Navbar
+ * @param className - extra css classes
+ * @param navbarBrand - elements to put in the rightmost side. Usually NavbarItem component.
+ * @param navbarEnd - elements put at the leftmost side. Usually NavbarItem components.
+ */
+
 class NavbarContainer extends Component {
   state = {
     isActive: false,
