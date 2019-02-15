@@ -1,0 +1,43 @@
+{
+  "IndexDocument": {
+    "Suffix": "index.html"
+  },
+  "RoutingRules": [
+    {
+      "Condition": {
+        "KeyPrefixEquals": "SmartSAVER"
+      },
+      "Redirect": {
+        "HostName": "canadaclb.ca",
+        "ReplaceKeyPrefixWith": "smartsaver"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "SMARTSAVER"
+      },
+      "Redirect": {
+        "HostName": "canadaclb.ca",
+        "ReplaceKeyPrefixWith": "smartsaver"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "SmartSAVER/Survey"
+      },
+      "Redirect": {
+        "HostName": "canadaclb.ca",
+        "ReplaceKeyPrefixWith": "smartsaver/survey"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "SMARTSAVER/SURVEY"
+      },
+      "Redirect": {
+        "HostName": "canadaclb.ca",
+        "ReplaceKeyPrefixWith": "smartsaver/survey"
+      }
+    }
+  ]
+}
