@@ -8,19 +8,7 @@ import style from './Banner.module.css'
  */
 
 const UfilerespBanner = props => {
-  const { intro, title, content, videoUrl } = props.content
-  const VideoFrame = () => {
-    if (!videoUrl) return null
-    return (
-      <iframe
-        title="Youtube Video"
-        src={videoUrl}
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen={true}
-      />
-    )
-  }
+  const { intro, title, content } = props.content
   return (
     <header>
       <Section
@@ -36,9 +24,6 @@ const UfilerespBanner = props => {
           className="subtitle"
           dangerouslySetInnerHTML={{ __html: content }}
         />
-        <div>
-          <VideoFrame />
-        </div>
       </Section>
     </header>
   )

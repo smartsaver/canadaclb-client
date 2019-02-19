@@ -17,7 +17,7 @@
 .BannerSection {
   width: 100%;
   max-width: 1440px;
-  min-height: 30rem;
+  min-height: 38rem;
   margin: 0 auto;
 }
 
@@ -34,12 +34,4 @@
   color: whitesmoke !important;
   text-shadow: 1px 1px black;
   text-shadow: 1px 1.3px #111111b3;
-}
-
-/* youtube video styling */
-.BannerSection iframe {
-  width: 100%;
-  max-width: 480px;
-  min-height: 20rem;
-  opacity: 0.8;
 }
