@@ -10,8 +10,9 @@ const UfilerespLayout = ({ children }) => {
       <Navbar
         navbarBrand={
           <NavbarItem
+            isLinkWillOpenInNewWindow={true}
             text={<img className="image" src={logo} alt="UfileRESP" />}
-            href="#"
+            href="https://www.ufile.ca?ref=ssorg"
           />
         }
         navbarEnd={<NavbarItem text="Apply" href="#apply" />}
