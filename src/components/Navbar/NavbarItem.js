@@ -7,7 +7,12 @@ import React from 'react'
  * @param {boolean} isLinkWillOpenInNewWindow - will put target="_blank" and rel="noopenner noreferrer" to a tag when true
  */
 
-const NavbarItem = ({ text, href, isLinkWillOpenInNewWindow = false }) => {
+const NavbarItem = ({
+  text,
+  href,
+  isLinkWillOpenInNewWindow = false,
+  className = '',
+}) => {
   const linkTagOptions = !isLinkWillOpenInNewWindow
     ? {}
     : {
@@ -15,7 +20,14 @@ const NavbarItem = ({ text, href, isLinkWillOpenInNewWindow = false }) => {
         rel: 'noopenner noreferrer',
       }
   return (
-    <a href={href} className="navbar-item" {...linkTagOptions}>
+    <a
+      href={href}
+      className={`
+        navbar-item
+        ${className}
+      `}
+      {...linkTagOptions}
+    >
       {text}
     </a>
   )
