@@ -13,7 +13,7 @@ Research demonstrates that even small amounts of education savings can set in mo
 2. For children as young as 11, their perception of whether college is financially possible influences their school-focused goals and the effort they put into their school work.
 3. Children with education savings between $1 – $499 are 3 times more likely to pursue postsecondary and 4 times more likely to graduate.
   `),
-  embedUrl: 'https://www.smartsaver.org/startmyresp',
+  embedUrl: 'https://www.smartsaver.org/startmyresp/Landing-Page.html?ufil',
   footerContent: processMarkdown(`
 Brought to you by UFile and SmartSAVER.  For more information, call 1888-RESP-CLB or info@smartsaver.org.
   `),
