@@ -1,21 +1,19 @@
 import processMarkdown from '../../../../libs/marked'
 
 const applyContent = {
-  title: 'What do I need to apply?',
+  title: 'Apply For Your Child’s Canada Learning Bond Today!',
   content: processMarkdown(`
-* There is no cost to apply
-* Social Insurance Number (SIN) for you and your child.
-* Have filed your latest income tax return.  
+If your child was born in 2004 or later and your net family income is $46,605* or less, you can start saving for your child’s education today. There is no cost to apply for the Canada Learning Bond and getting it doesn’t require you to use any of your own money.
 
-Research demonstrates that even small amounts of education savings can set in motion a chain reaction of positive social and educational outcomes for a child and their family:
+_*for three kids or less. For families with more than 3 children [click here](https://www.canada.ca/en/employment-social-development/services/student-financial-aid/education-savings/resp/resp-promoters/bulletin/notice-2018-772.html)._
 
-1. Youth with savings earmarked for their education are 50% more likely to participate in post-secondary education than those who have none.
-2. For children as young as 11, their perception of whether college is financially possible influences their school-focused goals and the effort they put into their school work.
-3. Children with education savings between $1 – $499 are 3 times more likely to pursue postsecondary and 4 times more likely to graduate.
+Eligible children receive an initial deposit of $500 and an additional $100 for every year that they’re eligible, including the years they were eligible before they applied, to a maximum of $2000.
+
+To receive the Canada Learning Bond, your child needs a Registered Education Savings Plan (RESP). You can get one started at no cost, with no fees, right here:
   `),
   embedUrl: 'https://www.smartsaver.org/startmyresp/Landing-Page.html?ufil',
   footerContent: processMarkdown(`
-Brought to you by UFile and SmartSAVER.  For more information, call 1888-RESP-CLB or info@smartsaver.org.
+Brought to you by UFile and SmartSAVER.  For more information, call 1-855-737-7252 (1-855-RESP-CLB) or info@smartsaver.org.
   `),
 }
 

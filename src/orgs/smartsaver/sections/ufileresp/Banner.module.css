@@ -10,6 +10,7 @@
 /* remove fixed background if bigger than widescreen devices */
 @media (min-width: 1441px) {
   .BannerImage {
+    background-position-y: 0;
     background-attachment: unset;
   }
 }

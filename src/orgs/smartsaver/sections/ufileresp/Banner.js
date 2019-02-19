@@ -18,10 +18,10 @@ const UfilerespBanner = props => {
           ${style.BannerSection}
         `}
       >
-        <h1 className="title">{title}</h1>
-        <p className="subtitle">{intro}</p>
-        <div
-          className="subtitle"
+        <h1 className="title is-3">{title}</h1>
+        <p className="subtitle is-4">{intro}</p>
+        <p
+          className="subtitle is-4"
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </Section>
