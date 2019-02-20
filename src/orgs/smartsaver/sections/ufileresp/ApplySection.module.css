@@ -1,0 +1,10 @@
+.ApplySection .SurveyFrame {
+  height: 100rem;
+}
+
+/* lessen frame height on fullhd devices */
+@media (min-width: 1409px) {
+  .ApplySection .SurveyFrame {
+    height: 85rem;
+  }
+}

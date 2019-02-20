@@ -2,9 +2,9 @@ import processMarkdown from '../../../../libs/marked'
 
 const bannerContent = {
   intro: 'Thanks to UFile for Supporting Education Savings!',
-  title: 'Grow your child’s dreams for tomorrow.',
+  title: 'Grow your child’s dreams for tomorrow!',
   content: processMarkdown(`
-Saving is easy with the Canada Learning Bond (CLB). The CLB offers families with modest incomes a simple way to start saving for their children’s education after high school with ___any Registered Education Savings Plan.___
+Did you know that youth with savings for their educations are 50% more likely to participate in post-secondary education than those who have none?
   `),
   videoUrl: 'https://www.youtube.com/embed/ev6ZtfjRdBg',
 }

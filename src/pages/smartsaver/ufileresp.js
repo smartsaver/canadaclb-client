@@ -1,44 +1,20 @@
 import React from 'react'
 import Layout from '../../orgs/smartsaver/sections/ufileresp/UfilerespLayout'
-import Section from '../../orgs/smartsaver/sections/ufileresp/Section'
 import Banner from '../../orgs/smartsaver/sections/ufileresp/Banner'
-import SurveyForm from '../../components/SurveyForm'
+import ApplySection from '../../orgs/smartsaver/sections/ufileresp/ApplySection'
+import UfileVideoSection from '../../orgs/smartsaver/sections/ufileresp/UfileVideo'
+import FooterSection from '../../orgs/smartsaver/sections/ufileresp/FooterSection'
 import allContent from '../../orgs/smartsaver/content/ufileresp/index'
 
-const { introContent, applyContent, bannerContent } = allContent
-
-const IntroSection = () => {
-  const { content } = introContent
-  return (
-    <Section>
-      <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
-    </Section>
-  )
-}
-
-const ApplySection = () => {
-  const { content, embedUrl, footerContent, title } = applyContent
-  return (
-    <Section name="apply">
-      <h2 className="title is-3">{title}</h2>
-      <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
-      <SurveyForm isEnabled={true}>
-        <iframe src={embedUrl} title="UFile RESP Application" />
-      </SurveyForm>
-      <div
-        className="content"
-        dangerouslySetInnerHTML={{ __html: footerContent }}
-      />
-    </Section>
-  )
-}
+const { introContent, applyContent, bannerContent, footerContent } = allContent
 
 const UfilerespPage = () => {
   return (
     <Layout>
       <Banner content={bannerContent} />
-      <IntroSection />
-      <ApplySection />
+      <UfileVideoSection url={bannerContent.videoUrl} content={introContent} />
+      <ApplySection content={applyContent} />
+      <FooterSection content={footerContent} />
     </Layout>
   )
 }
