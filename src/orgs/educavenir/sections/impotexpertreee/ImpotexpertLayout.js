@@ -11,8 +11,9 @@ const ImpotexpertLayout = ({ children }) => {
       <Navbar
         navbarBrand={
           <NavbarItem
+            isLinkWillOpenInNewWindow={true}
             text={<img src={logo} alt="ImpotExpertREEE" />}
-            href="#"
+            href="https://www.impotexpert.ca/?ref=ssorg"
           />
         }
         navbarEnd={
