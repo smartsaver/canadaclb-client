@@ -1,20 +1,20 @@
 import processMarkdown from '../../../../libs/marked'
+import marked from 'marked'
 
 const applyContent = {
-  title: 'Avant de commencer',
-  content: processMarkdown(`
-* Il ne coûte rien pour s’inscrire!!
-* Vous aurez besoin de votre numéro assurance sociale (NAS) et de celui de votre enfant.
-* Produisez votre déclaration de revenus
+  title:
+    'Demandez le Bon d’études canadien pour votre enfant dès aujourd’hui !',
+  content:
+    processMarkdown(`
+Si votre enfant est né en 2004 ou après et que votre revenu familial net est de 46 605 $* ou moins, vous pouvez profiter de cette occasion d’épargner dès aujourd’hui pour les études de votre enfant. Vous n’avez aucuns frais à payer pour demander le Bon d’études canadien ni aucun argent à investir.
 
-Des recherches démontrent que de petits montants mis de côté pour les études peuvent générer une série d’effets sociaux et éducationnels positifs pour un enfant et sa famille.
-
-1. Les jeunes ayant de l’épargne-études sont 50% plus susceptibles de poursuivre des études postsecondaires que ceux qui n’en pas.
-
-2. Pour les enfants âgés au moins de 11 ans, leur perception de la question de savoir si les études postsecondaire sont financièrement possibles a une influence sur leurs objectifs en matière d’éducation et sur l’effort qu’ils mettent dans leurs travaux scolaires.
-
-3. Les enfants ayant de l’épargne-études entre 1 $ et 499 $ sont trois fois plus susceptibles de poursuivre des études postsecondaires et quatre fois plus susceptibles d’obtenir leur diplôme.
-  `),
+_*pour les familles de trois enfants ou moins. Si votre famille compte plus de trois enfants, [cliquez ici.](https://www.canada.ca/fr/emploi-developpement-social/services/aide-financiere-etudiants/epargne-etudes/reee/promoteurs-reee/bulletin/avis-2018-772.html)_
+  
+Les enfants admissibles reçoivent un premier dépôt de 500 $ et 100 $ supplémentaires chaque année où ils sont admissibles, y compris les années précédant leur demande, jusqu’à un maximum de 2000 $.
+  `) +
+    marked(
+      'Pour recevoir le Bon d’études canadien, votre enfant doit avoir souscrit à un Régime enregistré d’épargne-études (REEE). Vous pouvez en obtenir un sans frais en [cliquant ici](#reee)'
+    ),
   embedUrl: 'https://www.educavenir.org/reeeussite/Accueil.html?',
   footerContent: processMarkdown(
     "Présenté par UFile et SmartSAVER. Pour plus d'information contactez 1-888-RESP-CLB ou info@smartsaver.org"

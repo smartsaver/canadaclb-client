@@ -9,7 +9,7 @@ const ApplySection = props => {
     <Section name="appliquer" className={style.ApplySection}>
       <h2 className="title is-3">{title}</h2>
       <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
-      <SurveyForm isEnabled={true}>
+      <SurveyForm isEnabled={true} name="reee">
         <iframe
           className={style.SurveyFrame}
           src={embedUrl}
