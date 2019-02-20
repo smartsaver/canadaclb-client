@@ -2,8 +2,15 @@
   height: 100rem;
 }
 
-/* lessen frame height on fullhd devices */
-@media (min-width: 1409px) {
+/* lessen frame height on tablet and above */
+@media (min-width: 769px) {
+  .ApplySection .SurveyFrame {
+    height: 89rem;
+  }
+}
+
+/* lessen frame height on widescreen and above */
+@media (min-width: 1216px) {
   .ApplySection .SurveyFrame {
     height: 85rem;
   }
