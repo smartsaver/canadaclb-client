@@ -9,6 +9,7 @@ const IntroSection = props => {
       <div
         className={`
           content
+          has-text-centered
           ${style.Content}
         `}
         dangerouslySetInnerHTML={{ __html: content }}
