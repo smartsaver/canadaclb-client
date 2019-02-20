@@ -17,7 +17,7 @@ const NavbarItem = ({
     ? {}
     : {
         target: '_blank',
-        rel: 'noopenner noreferrer',
+        rel: 'noopener noreferrer',
       }
   return (
     <a
