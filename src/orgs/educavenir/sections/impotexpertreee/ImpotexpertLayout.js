@@ -3,11 +3,18 @@ import Layout from '../../../../components/Layout'
 import Navbar from '../../../../components/Navbar'
 import NavbarItem from '../../../../components/Navbar/NavbarItem'
 import NavbarItemButtonContainer from '../../../../components/Navbar/NavbarItemButtonContainer'
+import SEO from '../../../../components/Seo'
 import logo from '../../../../images/educavenir/impot-expert-logo.png'
 
-const ImpotexpertLayout = ({ children }) => {
+const ImpotexpertLayout = ({ children, seoContent, seoTitle }) => {
   return (
     <Layout>
+      <SEO
+        title={seoTitle}
+        description={seoContent}
+        lang="fr"
+        keywords={['reee', 'éducation', 'educavenir']}
+      />
       <Navbar
         navbarBrand={
           <NavbarItem

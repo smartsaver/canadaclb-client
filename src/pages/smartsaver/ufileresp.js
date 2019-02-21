@@ -10,7 +10,7 @@ const { introContent, applyContent, bannerContent, footerContent } = allContent
 
 const UfilerespPage = () => {
   return (
-    <Layout>
+    <Layout seoTitle="UFile" seoContent={bannerContent.content}>
       <Banner content={bannerContent} />
       <UfileVideoSection url={bannerContent.videoUrl} content={introContent} />
       <ApplySection content={applyContent} />
