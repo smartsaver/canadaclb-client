@@ -1,7 +1,7 @@
 import processMarkdown from '../../../../libs/marked'
 import marked from 'marked'
 
-const embedUrl = 'https://www.educavenir.org/reeeussite/Accueil.html?'
+const embedUrl = 'https://www.smartsaver.org/reeeussite/?ufile'
 
 const applyContent = {
   title:
@@ -20,7 +20,7 @@ Les enfants admissibles reçoivent un premier dépôt de 500 $ et 100 $ supplém
     processMarkdown(
       `_Si vous ne pouvez pas voir le formulaire, [cliquez ici.](${embedUrl})_`
     ),
-  embedUrl: 'https://www.educavenir.org/reeeussite/Accueil.html?',
+  embedUrl,
   footerContent: processMarkdown(
     "Présenté par UFile et SmartSAVER. Pour plus d'information contactez 1-888-RESP-CLB ou info@smartsaver.org"
   ),
