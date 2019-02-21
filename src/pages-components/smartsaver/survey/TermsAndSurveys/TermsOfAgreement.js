@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '../Section'
-import Notification from '../../../../../components/Notification'
-import termsOfAgreementContent from '../../../content/survey/termsOfAgreementContent'
+import Notification from '../../../../components/Notification'
+import termsOfAgreementContent from '../content/termsOfAgreementContent'
 import style from './TermsOfAgreement.module.css'
 
 const TermsOfAgreement = ({ onSubmit, isAccepted }) => {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import SurveyForm from '../../../../../../components/SurveyForm'
+import SurveyForm from '../../../../../components/SurveyForm'
 import Section from '../../Section'
-import emailSurveyContent from '../../../../content/survey/emailSurveyContent'
+import emailSurveyContent from '../../content/emailSurveyContent'
 import EmailSurveyForm from './EmailSurveyForm'
-import Notification from '../../../../../../components/Notification'
+import Notification from '../../../../../components/Notification'
 import axios from 'axios'
 import PropTypes from 'prop-types'
 
