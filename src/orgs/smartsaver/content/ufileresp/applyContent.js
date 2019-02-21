@@ -1,5 +1,7 @@
 import processMarkdown from '../../../../libs/marked'
 
+const embedUrl = 'https://www.smartsaver.org/startmyresp/Landing-Page.html?ufil'
+
 const applyContent = {
   title: 'Apply For Your Child’s Canada Learning Bond Today!',
   content: processMarkdown(`
@@ -10,8 +12,10 @@ _*for three kids or less. For families with more than 3 children [click here](ht
 Eligible children receive an initial deposit of $500 and an additional $100 for every year that they’re eligible, including the years they were eligible before they applied, to a maximum of $2000.
 
 To receive the Canada Learning Bond, your child needs a Registered Education Savings Plan (RESP). You can get one started at no cost, with no fees, right here:
+
+_If you cannot see the form, [click here.](${embedUrl})_
   `),
-  embedUrl: 'https://www.smartsaver.org/startmyresp/Landing-Page.html?ufil',
+  embedUrl,
   footerContent: processMarkdown(`
 Brought to you by UFile and SmartSAVER.  For more information, call 1-855-737-7252 (1-855-RESP-CLB) or info@smartsaver.org.
   `),
