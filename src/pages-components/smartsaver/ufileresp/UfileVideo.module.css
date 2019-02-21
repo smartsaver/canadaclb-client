@@ -1,0 +1,11 @@
+iframe.UfileVideoFrame {
+  width: 100%;
+  max-width: 480px;
+  min-height: 20rem;
+  margin: 0 auto;
+}
+
+.Content {
+  font-size: 1.3rem;
+  font-weight: 500;
+}

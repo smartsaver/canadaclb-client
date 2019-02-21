@@ -1,0 +1,17 @@
+.UfileContainer {
+  margin: 1rem;
+}
+
+.UfileLogo {
+  max-height: 3rem;
+}
+
+.Container {
+  flex-wrap: wrap;
+}
+
+.Center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
