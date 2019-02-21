@@ -10,7 +10,7 @@ const { applyContent, introContent, bannerContent, footerContent } = allContent
 
 const ImpotexpertreeePage = () => {
   return (
-    <Layout>
+    <Layout seoTitle="ImpôtExpert" seoContent={bannerContent.seoContent}>
       <Banner content={bannerContent} />
       <IntroSection content={introContent} />
       <ApplySection content={applyContent} />

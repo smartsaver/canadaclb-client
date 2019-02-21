@@ -3,11 +3,17 @@ import Layout from '../../../../components/Layout'
 import Navbar from '../../../../components/Navbar'
 import NavbarItemButtonContainer from '../../../../components/Navbar/NavbarItemButtonContainer'
 import NavbarItem from '../../../../components/Navbar/NavbarItem'
+import SEO from '../../../../components/Seo'
 import logo from '../../../../images/smartsaver/ufile-logo.png'
 
-const UfilerespLayout = ({ children }) => {
+const UfilerespLayout = ({ children, seoTitle, seoContent }) => {
   return (
     <Layout>
+      <SEO
+        title={seoTitle}
+        description={seoContent}
+        keywords={['resp', 'education', 'ufileresp']}
+      />
       <Navbar
         navbarBrand={
           <NavbarItem

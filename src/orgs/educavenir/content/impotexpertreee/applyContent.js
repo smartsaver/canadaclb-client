@@ -1,6 +1,8 @@
 import processMarkdown from '../../../../libs/marked'
 import marked from 'marked'
 
+const embedUrl = 'https://www.educavenir.org/reeeussite/Accueil.html?'
+
 const applyContent = {
   title:
     'Demandez le Bon d’études canadien pour votre enfant dès aujourd’hui !',
@@ -13,7 +15,10 @@ _*pour les familles de trois enfants ou moins. Si votre famille compte plus de t
 Les enfants admissibles reçoivent un premier dépôt de 500 $ et 100 $ supplémentaires chaque année où ils sont admissibles, y compris les années précédant leur demande, jusqu’à un maximum de 2000 $.
   `) +
     marked(
-      'Pour recevoir le Bon d’études canadien, votre enfant doit avoir souscrit à un Régime enregistré d’épargne-études (REEE). Vous pouvez en obtenir un sans frais en [cliquant ici](#reee)'
+      'Pour recevoir le Bon d’études canadien, votre enfant doit avoir souscrit à un Régime enregistré d’épargne-études (REEE). Vous pouvez en obtenir un sans frais en [cliquant ici.](#reee)'
+    ) +
+    processMarkdown(
+      `_Si vous ne pouvez pas voir le formulaire, [cliquez ici.](${embedUrl})_`
     ),
   embedUrl: 'https://www.educavenir.org/reeeussite/Accueil.html?',
   footerContent: processMarkdown(
