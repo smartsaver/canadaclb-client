@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../../../components/Footer'
-import './Footer.css'
+import Footer from '../../components/Footer'
+import './SmartsaverFooter.css'
 import footerContent from './content/footerContent'
 
 const SmartsaverFooter = () => {
