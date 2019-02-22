@@ -6,16 +6,22 @@ import './SmartsaverNavbar.css'
 
 /**
  * @function SmartsaverNavbar - custom themed blue navbar with smartsaver logo.
- * @param {Objeccy} navbarEnd - any react element. will go to the right side of the navbar
+ * @param {Object} navbarEnd - any react element. will go to the right side of the navbar
+ * @param {Object} [navbarBrand = defaultNavbarBrand] - any react element, will go the leftmost. Has a default value of smartsaver logo.
  */
 
-const SmartsaverNavbar = ({ navbarEnd = null }) => {
+const defaultNavbarBrand = (
+  <NavbarItem text={<img src={brandLogo} alt="SmartSAVER" />} href="#" />
+)
+
+const SmartsaverNavbar = ({
+  navbarBrand = defaultNavbarBrand,
+  navbarEnd = null,
+}) => {
   return (
     <Navbar
       className="SmartsaverNavbar Navbar--Smartsaver-theme is-dark"
-      navbarBrand={
-        <NavbarItem text={<img src={brandLogo} alt="SmartSAVER" />} href="#" />
-      }
+      navbarBrand={navbarBrand}
       navbarEnd={navbarEnd}
     />
   )
