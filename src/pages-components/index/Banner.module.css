@@ -1,0 +1,38 @@
+.BannerImage {
+  background-color: #efefef;
+  background: url('../../images/smartsaver/smartsaver-families-blue.jpg')
+    no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.BannerSection {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 20rem;
+  margin: 0 auto;
+}
+
+/* center all text on big devices */
+@media (min-width: 769px) {
+  .BannerSection {
+    text-align: center;
+  }
+}
+
+.BannerSection p,
+.BannerSection h1,
+.BannerSection strong {
+  color: whitesmoke !important;
+  text-shadow: 1px 1px black;
+  text-shadow: 1px 1.3px #111111b3;
+}
+
+/* content styling */
+.Content {
+  margin-bottom: 4rem;
+}
+
+.Content em {
+  text-decoration: underline;
+}

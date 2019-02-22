@@ -4,6 +4,10 @@ import Footer from '../smartsaver/SmartsaverFooter'
 import SmartsaverNavbar from '../smartsaver/SmartsaverNavbar'
 import NavbarItem from '../../components/Navbar/NavbarItem'
 import brandLogo from '../../images/smartsaver/smartsaver-logo-small.png'
+import Banner from './Banner'
+import allContent from './content'
+
+const { footerContent } = allContent
 
 const Navbar = () => {
   return (
@@ -15,7 +19,9 @@ const Navbar = () => {
           isLinkWillOpenInNewWindow={true}
         />
       }
-      navbarEnd={<NavbarItem text="Contact" href="#contact" />}
+      navbarEnd={
+        <NavbarItem text="Contact" href="mailto:info@smartsaver.org" />
+      }
     />
   )
 }
@@ -25,7 +31,7 @@ const IndexPage = () => {
     <Layout>
       <Navbar />
       <main>
-        <h1>Hello World</h1>
+        <Banner content={footerContent} />
       </main>
       <h2>Smartsaver footer</h2>
       <Footer />
