@@ -3,12 +3,6 @@ import Footer from '../../components/Footer'
 import './SmartsaverFooter.css'
 import footerContent from './content/footerContent'
 
-/**
- * @function SmartsaverFooter - footer, Smartsaver themed.
- * @param {string} [name = 'contact'] - footer section id name
- * @param {Object} [children = defaultChildren()] - default react element for footer content
- */
-
 const defaultChildren = () => {
   const { image, intro, otherLinks, footer, contact } = footerContent
   return (
@@ -37,6 +31,12 @@ const defaultChildren = () => {
     </div>
   )
 }
+
+/**
+ * @function SmartsaverFooter - footer, Smartsaver themed.
+ * @param {string} [name= 'contact'] - footer section id name
+ * @param {Object} [children = defaultChildren()] - default react element for footer content
+ */
 
 const SmartsaverFooter = ({
   name = 'contact',
