@@ -1,0 +1,20 @@
+.Background__primary {
+  background-color: #003b59;
+  color: whitesmoke !important;
+}
+
+.Background__primary a {
+  color: #e9b108;
+}
+
+.Background__light {
+  color: #003b59 !important;
+}
+
+.Background__light a {
+  color: #dea908;
+}
+
+.Background__light a:hover {
+  text-decoration: underline;
+}
