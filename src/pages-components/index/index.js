@@ -1,7 +1,16 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-import Navbar from '../smartsaver/SmartsaverNavbar'
 import Footer from '../smartsaver/SmartsaverFooter'
+import SmartsaverNavbar from '../smartsaver/SmartsaverNavbar'
+import NavbarItem from '../../components/Navbar/NavbarItem'
+
+const Navbar = () => {
+  return (
+    <SmartsaverNavbar
+      navbarEnd={<NavbarItem text="Contact" href="#contact" />}
+    />
+  )
+}
 
 const IndexPage = () => {
   return (
