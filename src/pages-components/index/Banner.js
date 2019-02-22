@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from '../../components/Section'
 import style from './Banner.module.css'
+import theme from '../smartsaver/Theme.module.css'
 
 /**
  * @function CanadaclbBanner - Banner component
@@ -8,7 +9,7 @@ import style from './Banner.module.css'
  */
 
 const CanadaclbBanner = props => {
-  const { title } = props.content
+  const { title, content } = props.content
   return (
     <header>
       <Section
@@ -21,9 +22,22 @@ const CanadaclbBanner = props => {
         <div
           className={`
             content
-            ${style.Content}
+            ${style.BannerTitle}
           `}
           dangerouslySetInnerHTML={{ __html: title }}
+        />
+      </Section>
+      <Section
+        className={`
+          ${theme.Background__light}
+        `}
+      >
+        <div
+          className={`
+            content
+            ${style.BannerContent}
+          `}
+          dangerouslySetInnerHTML={{ __html: content }}
         />
       </Section>
     </header>

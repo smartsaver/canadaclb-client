@@ -20,19 +20,23 @@
   }
 }
 
-.BannerSection p,
-.BannerSection h1,
-.BannerSection strong {
+/* content and title styling */
+.BannerTitle p,
+.BannerTitle h1,
+.BannerTitle strong {
   color: whitesmoke !important;
   text-shadow: 1px 1px black;
   text-shadow: 1px 1.3px #111111b3;
 }
 
-/* content styling */
-.Content {
+.BannerTitle {
   margin-bottom: 4rem;
 }
 
-.Content em {
+.BannerTitle em {
   text-decoration: underline;
+}
+
+.BannerContent p {
+  font-size: 1.5rem !important;
 }
