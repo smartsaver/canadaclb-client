@@ -1,0 +1,19 @@
+.Primary {
+  color: whitesmoke !important;
+}
+
+.Primary a {
+  color: #e9b108;
+}
+
+.Light {
+  color: #003b59 !important;
+}
+
+.Light a {
+  color: #dea908;
+}
+
+.Light a:hover {
+  text-decoration: underline;
+}

@@ -1,7 +1,3 @@
-import React from 'react'
-
-const IndexPage = () => {
-  return <h1>CanadaCLB.ca</h1>
-}
+import IndexPage from '../pages-components/index'
 
 export default IndexPage

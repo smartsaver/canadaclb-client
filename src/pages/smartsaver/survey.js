@@ -1,24 +1,3 @@
-import React from 'react'
-import SmartsaverLayout from '../../orgs/smartsaver/sections/SmartsaverLayout'
-import IntroSection from '../../orgs/smartsaver/sections/survey/IntroSection'
-import SEO from '../../components/Seo/SeoWithoutTitleTemplate'
-import TermsAndSurveysSection from '../../orgs/smartsaver/sections/survey/TermsAndSurveys'
-import ThankyouSection from '../../orgs/smartsaver/sections/survey/Thankyou'
-import surveySeoContent from '../../orgs/smartsaver/content/survey/surveySeoContent'
+import SurveyPage from '../../pages-components/smartsaver/survey'
 
-const surveyPage = () => {
-  return (
-    <SmartsaverLayout>
-      <SEO
-        title="SmartSAVER Survey"
-        keywords={[`resp`, `myfuturesaver`, `education`, `survey`]}
-        description={surveySeoContent}
-      />
-      <IntroSection />
-      <TermsAndSurveysSection />
-      <ThankyouSection />
-    </SmartsaverLayout>
-  )
-}
-
-export default surveyPage
+export default SurveyPage
