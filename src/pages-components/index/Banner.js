@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '../../components/Section'
 import style from './Banner.module.css'
-import theme from '../smartsaver/Theme.module.css'
+import theme from '../smartsaver/css-theme/Theme.module.css'
 
 /**
  * @function CanadaclbBanner - Banner component
