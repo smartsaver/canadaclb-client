@@ -26,12 +26,9 @@ Our digital platforms make it easy for families to start education savings for t
 }
 
 const contactContent = {
-  title: 'Contact',
+  title: 'Looking for a specific Canada Learning Bond page?',
   content: processMarkdown(`
-Looking for a specific Canada Learning Bond page on our site? Need information?
-Call us at 1-855-737-7252 or email info@smartsaver.org
-  
-*[Breaking the Pattern of Wealth Inequality in Higher Education.](https://childrenssavingsaccount.org/wp-content/uploads/2017/01/BreakingThe-PatternOfWealthInequalityInHigherEducation.pdf) University of Kansas, Center on Assets Education, and Inclusion. 2018
+We maintain many Canada Learning Bond websites for our community partners across Canada. If you're looking for a specific site or have questions, please call us at 1-855-737-7252 or email info@smartsaver.org.
   `),
 }
 
