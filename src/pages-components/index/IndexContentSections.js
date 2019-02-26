@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Section from '../../components/Section'
+import Section from './IndexSection'
 import Content from '../../components/Content'
 import text from '../smartsaver/css-theme/Text.module.css'
 
@@ -31,11 +31,10 @@ const AboutSection = props => {
   )
 }
 
-const ContactContent = props => {
+const ContactSection = props => {
   const { title, content } = props.content
   return (
     <Section
-      name="contact"
       className={`
         ${text.Light}
       `}
@@ -50,9 +49,9 @@ const IndexContentSections = ({ content }) => {
   const { introContent, aboutContent, contactContent } = content
   return (
     <Fragment>
-      <IntroSection content={introContent} />
       <AboutSection content={aboutContent} />
-      {/* <ContactContent content={contactContent} /> */}
+      <ContactSection content={contactContent} />
+      <IntroSection content={introContent} />
     </Fragment>
   )
 }

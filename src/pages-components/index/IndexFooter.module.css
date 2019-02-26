@@ -1,0 +1,10 @@
+/* reverse order when bigger than mobile */
+@media (min-width: 769px) {
+  .LogoSection {
+    order: 0;
+  }
+
+  .ContactSection {
+    order: 1;
+  }
+}
