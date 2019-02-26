@@ -1,4 +1,5 @@
-.Background__primary {
+.Background__primary,
+.Background__primary h1 {
   background-color: #003b59;
   color: whitesmoke !important;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '../../components/Section'
+import Content from '../../components/Content'
 import style from './Banner.module.css'
 import theme from '../smartsaver/css-theme/Theme.module.css'
 
@@ -9,36 +10,23 @@ import theme from '../smartsaver/css-theme/Theme.module.css'
  */
 
 const CanadaclbBanner = props => {
-  const { title, content } = props.content
+  const { title } = props.content
   return (
     <header>
-      <Section
+      <div
         className={`
           section 
           ${style.BannerImage}
-          ${style.BannerSection}
+          ${style.BannerImageSection}
         `}
-      >
-        <div
-          className={`
-            content
-            ${style.BannerTitle}
-          `}
-          dangerouslySetInnerHTML={{ __html: title }}
-        />
-      </Section>
+      />
       <Section
         className={`
-          ${theme.Background__light}
+          ${style.BannerTitle}
+          ${theme.Background__primary}
         `}
       >
-        <div
-          className={`
-            content
-            ${style.BannerContent}
-          `}
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
+        <Content html={title} />
       </Section>
     </header>
   )

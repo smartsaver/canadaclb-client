@@ -31,28 +31,12 @@ const AboutSection = props => {
   )
 }
 
-const ContactContent = props => {
-  const { title, content } = props.content
-  return (
-    <Section
-      name="contact"
-      className={`
-        ${text.Light}
-      `}
-    >
-      <h2 className={`title ${text.Light}`}>{title}</h2>
-      <Content html={content} />
-    </Section>
-  )
-}
-
 const IndexContentSections = ({ content }) => {
-  const { introContent, aboutContent, contactContent } = content
+  const { introContent, aboutContent } = content
   return (
     <Fragment>
-      <IntroSection content={introContent} />
       <AboutSection content={aboutContent} />
-      {/* <ContactContent content={contactContent} /> */}
+      <IntroSection content={introContent} />
     </Fragment>
   )
 }
