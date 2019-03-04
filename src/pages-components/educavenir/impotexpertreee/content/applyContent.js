@@ -22,7 +22,7 @@ Les enfants admissibles reçoivent un premier dépôt de 500 $ et 100 $ supplém
     ),
   embedUrl,
   footerContent: processMarkdown(
-    "Présenté par UFile et SmartSAVER. Pour plus d'information contactez 1-888-RESP-CLB ou info@smartsaver.org"
+    "Présenté par UFile et SmartSAVER. Pour plus d'information contactez 1-855-737-7252 ou info@smartsaver.org"
   ),
 }
 
