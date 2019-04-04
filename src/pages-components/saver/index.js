@@ -2,15 +2,15 @@ import React from 'react'
 import HomeLayout from './HomeLayout'
 import SEO from '../../components/Seo'
 import SmartSaverBanner from './SmartSaverBanner'
-// import ClaimSection from './Claim'
-// import ParticipateSection from './Participate'
-// import ListOfFormsSection from './ListOfForms'
+import ClaimSection from './Claim'
+import ParticipateSection from './Participate'
+import ListOfFormsSection from './ListOfForms'
+// import StepsToApplySection from './StepsToApply'
 // import BmoSection from './Bmo'
 // import WealthsimpleSection from './Wealthsimple'
 // import NoSponsorshipSection from './NoSponorship'
 // import SubmissionSurveyForm from './ListOfForms/SubmissionSurveyForm'
 // import RespUploadSection from './RespUpload'
-// import StepsToApplySection from './StepsToApply'
 // import FaqSection from './Faq'
 
 const IndexPage = () => {
@@ -18,10 +18,10 @@ const IndexPage = () => {
     <HomeLayout>
       <SEO title="Home" keywords={[`resp`, `myfuturesaver`, `education`]} />
       <SmartSaverBanner />
-      {/* <ClaimSection /> */}
-      {/* <ParticipateSection /> */}
+      <ClaimSection />
+      <ParticipateSection />
       {/* <StepsToApplySection /> */}
-      {/* <ListOfFormsSection /> */}
+      <ListOfFormsSection />
       {/* <BmoSection /> */}
       {/* <WealthsimpleSection /> */}
       {/* <NoSponsorshipSection /> */}
