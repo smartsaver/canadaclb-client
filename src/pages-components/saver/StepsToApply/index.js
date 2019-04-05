@@ -2,7 +2,7 @@ import React from 'react'
 import Section from '../SmartsaverSection'
 import stepsToApplyContent from '../content/stepsToApplyContent'
 import StepsList from './stepsList'
-import logo from '../../../images/logo-for-white.jpg'
+import logo from '../../../images/smartsaver/smartsaver-white-bg-logo.jpg'
 
 import './stepsToApply.css'
 

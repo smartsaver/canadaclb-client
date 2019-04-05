@@ -5,7 +5,7 @@ import SmartSaverBanner from './SmartSaverBanner'
 import ClaimSection from './Claim'
 import ParticipateSection from './Participate'
 import ListOfFormsSection from './ListOfForms'
-// import StepsToApplySection from './StepsToApply'
+import StepsToApplySection from './StepsToApply'
 // import BmoSection from './Bmo'
 // import WealthsimpleSection from './Wealthsimple'
 // import NoSponsorshipSection from './NoSponorship'
@@ -20,7 +20,7 @@ const IndexPage = () => {
       <SmartSaverBanner />
       <ClaimSection />
       <ParticipateSection />
-      {/* <StepsToApplySection /> */}
+      <StepsToApplySection />
       <ListOfFormsSection />
       {/* <BmoSection /> */}
       {/* <WealthsimpleSection /> */}

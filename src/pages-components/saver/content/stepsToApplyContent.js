@@ -1,9 +1,9 @@
 import { processMarkdown } from './index'
 import { stepOptions } from './index'
-import step1Logo from '../../../images/step1.png'
-import step2Logo from '../../../images/step2.png'
-import step3Logo from '../../../images/step3.png'
-import step4Logo from '../../../images/step4.png'
+import step1Logo from '../../../images/smartsaver/steps/step1.png'
+import step2Logo from '../../../images/smartsaver/steps/step2.png'
+import step3Logo from '../../../images/smartsaver/steps/step3.png'
+import step4Logo from '../../../images/smartsaver/steps/step4.png'
 
 const processStep = content => processMarkdown(content, stepOptions)
 
