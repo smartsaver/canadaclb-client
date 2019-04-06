@@ -3,7 +3,12 @@ import Form from '../../../components/Form'
 import FormField from '../../../components/Form/FormFieldControl'
 import PropTypes from 'prop-types'
 
-// This form only keeps the form state and passes it to it's parent.
+/**
+ * @name RespUploadForm - Form only, passes onSubmit handler to its parent.
+ * @param {function} onSubmit
+ * @param {boolean} isLoading
+ * @param {boolean} isFormSuccess
+ */
 
 /* eslint-disable jsx-a11y/label-has-for */
 class RespUploadForm extends Component {

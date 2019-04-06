@@ -30,7 +30,7 @@ class RespSubmission extends Component {
     // make email template based on FormData API
     const { name, email, kidsNames, respStatementType, files } = jsonData
     const from = 'Myfuturesaver.org <noreply@myfuturesaver.org>'
-    const to = process.env.GATSBY_MAIL_RECIPIENT_EMAIL
+    const to = process.env.GATSBY_MYFUTURESAVER_EMAIL
     const subject = 'FutureSAVER Statement Submission'
     const text = `A FutureSAVER applicant has submitted their CLB Statement
 
@@ -51,11 +51,11 @@ Thank you.`
   }
 
   sendEmailWithAttachment = async senderDetails => {
-    const baseURL = process.env.GATSBY_MAIL_SERVICE_BASE_URL
-    const url = `${process.env.GATSBY_MAIL_URL}/clb-statement`
+    const url = `${
+      process.env.GATSBY_MYFUTURESAVER_SERVER_URL
+    }/api/canadaclb/smartsaver/mail/clb-statement`
     return await axios({
       method: 'post',
-      baseURL,
       url,
       data: this.makeEmailTemplate(senderDetails),
       headers: {
@@ -65,8 +65,9 @@ Thank you.`
   }
 
   sendSuccessEmail = async senderDetails => {
-    const baseURL = process.env.GATSBY_MAIL_SERVICE_BASE_URL
-    const url = `${process.env.GATSBY_MAIL_URL}/clb-statement-success`
+    const url = `${
+      process.env.GATSBY_MYFUTURESAVER_SERVER_URL
+    }/api/canadaclb/smartsaver/mail/clb-statement-success`
     const { email } = senderDetails
     const data = {
       from: 'Myfuturesaver.org <noreply@myfuturesaver.org>',
@@ -84,7 +85,6 @@ The SmartSAVER Team`,
     }
     return await axios({
       method: 'post',
-      baseURL,
       url,
       data,
     })
