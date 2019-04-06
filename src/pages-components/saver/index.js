@@ -6,9 +6,9 @@ import ClaimSection from './Claim'
 import ParticipateSection from './Participate'
 import ListOfFormsSection from './ListOfForms'
 import StepsToApplySection from './StepsToApply'
-// import BmoSection from './Bmo'
-// import WealthsimpleSection from './Wealthsimple'
-// import NoSponsorshipSection from './NoSponorship'
+import BmoSection from './Bmo'
+import WealthsimpleSection from './Wealthsimple'
+import NoSponsorshipSection from './NoSponorship'
 // import SubmissionSurveyForm from './ListOfForms/SubmissionSurveyForm'
 // import RespUploadSection from './RespUpload'
 // import FaqSection from './Faq'
@@ -22,9 +22,9 @@ const IndexPage = () => {
       <ParticipateSection />
       <StepsToApplySection />
       <ListOfFormsSection />
-      {/* <BmoSection /> */}
-      {/* <WealthsimpleSection /> */}
-      {/* <NoSponsorshipSection /> */}
+      <BmoSection />
+      <WealthsimpleSection />
+      <NoSponsorshipSection />
       {/* <SubmissionSurveyForm /> */}
       {/* <RespUploadSection /> */}
       {/* <FaqSection /> */}

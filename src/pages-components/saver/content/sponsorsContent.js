@@ -1,7 +1,7 @@
 import { processMarkdown } from './index'
-import bmoFormDownload from '../../../download/562 Fillable (Sep 10_2018)_V2.pdf'
-import bmoLogo from '../../../images/bmo-logo.jpg'
-import wealthsimpleLogo from '../../../images/wealthsimple-logo.png'
+import bmoFormDownload from '../../../download/smartsaver/562 Fillable (Sep 10_2018)_V2.pdf'
+import bmoLogo from '../../../images/smartsaver/sponsors/bmo-logo.jpg'
+import wealthsimpleLogo from '../../../images/smartsaver/sponsors/wealthsimple-logo.png'
 
 const bmo = {
   heading: 'Attention Bank of Montreal (BMO) applicants!',
