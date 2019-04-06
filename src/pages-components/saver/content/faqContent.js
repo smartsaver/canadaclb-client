@@ -1,5 +1,5 @@
 import { processMarkdown } from './index'
-import faqDownload from '../../../download/Accelerator Pilot Participant FAQs_FNL.pdf'
+import faqDownload from '../../../download/smartsaver/Accelerator Pilot Participant FAQs_FNL.pdf'
 
 const faq = {
   heading: "FAQ's",

@@ -9,9 +9,9 @@ import StepsToApplySection from './StepsToApply'
 import BmoSection from './Bmo'
 import WealthsimpleSection from './Wealthsimple'
 import NoSponsorshipSection from './NoSponorship'
-// import SubmissionSurveyForm from './ListOfForms/SubmissionSurveyForm'
-// import RespUploadSection from './RespUpload'
-// import FaqSection from './Faq'
+import SubmissionSurveyForm from './ListOfForms/SubmissionSurveyForm'
+import RespUploadSection from './RespUpload'
+import FaqSection from './Faq'
 
 const IndexPage = () => {
   return (
@@ -25,9 +25,9 @@ const IndexPage = () => {
       <BmoSection />
       <WealthsimpleSection />
       <NoSponsorshipSection />
-      {/* <SubmissionSurveyForm /> */}
-      {/* <RespUploadSection /> */}
-      {/* <FaqSection /> */}
+      <SubmissionSurveyForm />
+      <RespUploadSection />
+      <FaqSection />
     </HomeLayout>
   )
 }
