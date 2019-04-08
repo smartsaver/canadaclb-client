@@ -15,7 +15,7 @@ const SmartSaverBanner = () => {
             </div>
             <div className="Title__footer">
               <p className="subtitle is-5">{content}</p>
-              <a href="/#claim" className="button is-warning" role="button">
+              <a href="#claim" className="button is-warning" role="button">
                 Show Me How
               </a>
             </div>

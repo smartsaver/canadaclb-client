@@ -18,17 +18,14 @@ const defaultNavbarBrand = (
 const defaultNavbarEnd = (
   <Fragment>
     <NavbarDropdown text="Application Process">
-      <NavbarItem text="1. Questionnaire" href="/#questionnaire" />
-      <NavbarItem
-        text="2. RESP/CLB Application"
-        href="/#resp-clb-application"
-      />
-      <NavbarItem text="3. A. Submission" href="/#submission-form" />
-      <NavbarItem text="3. B. Submit CLB" href="/#upload-clb" />
+      <NavbarItem text="1. Questionnaire" href="#questionnaire" />
+      <NavbarItem text="2. RESP/CLB Application" href="#resp-clb-application" />
+      <NavbarItem text="3. A. Submission" href="#submission-form" />
+      <NavbarItem text="3. B. Submit CLB" href="#upload-clb" />
     </NavbarDropdown>
-    <NavbarItem text="Certificate" href="/#certificate" />
-    <NavbarItem text="FAQ" href="/#faq" />
-    <NavbarItem text="Contact" href="/#contact" />
+    <NavbarItem text="Certificate" href="#certificate" />
+    <NavbarItem text="FAQ" href="#faq" />
+    <NavbarItem text="Contact" href="#contact" />
   </Fragment>
 )
 
