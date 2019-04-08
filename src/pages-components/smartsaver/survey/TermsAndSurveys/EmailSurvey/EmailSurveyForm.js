@@ -50,13 +50,11 @@ class EmailSurveyForm extends Component {
 
   addToMailingList = ({ email }) => {
     /* eslint-disable no-undef */
-    const baseURL = process.env.GATSBY_MAIL_SERVER_URL
     const listId = mailchimp.pastApplicantListId
     return new Promise((resolve, reject) => {
       axios({
         method: 'post',
-        baseURL,
-        url: '/subscriber/new',
+        url: `${process.env.GATSBY_MAIL_API_URL}/subscriber/new`,
         data: { email, listId },
       })
         .then(success => {

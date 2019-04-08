@@ -27,11 +27,9 @@ class EmailSurvey extends Component {
 
   sendMailToSmartsaver = async ({ email }) => {
     /* eslint-disable no-undef, no-console */
-    const baseURL = process.env.GATSBY_MAIL_SERVER_URL
-    const to = process.env.GATSBY_MYFUTURESAVER_EMAIL
     const data = {
       from: 'Myfuturesaver.org <noreply@myfuturesaver.org>',
-      to: `${to}`,
+      to: process.env.GATSBY_MYFUTURESAVER_EMAIL,
       subject: 'Past StartMyRESP Applicant Survey',
       text: `
 A past StartMyRESP applicant has submitted their survey on CanadaCLB.ca/SmartSAVER/survey
@@ -43,8 +41,7 @@ email: ${email}
     try {
       await axios({
         method: 'post',
-        baseURL,
-        url: '/success',
+        url: `${process.env.GATSBY_MAIL_API_URL}/success`,
         data,
       })
     } catch (error) {
@@ -55,10 +52,9 @@ email: ${email}
 
   sendApplicantSuccessMail = async ({ email }) => {
     /* eslint-disable no-undef, no-console */
-    const baseURL = process.env.GATSBY_MAIL_SERVER_URL
     const data = {
       from: 'Myfuturesaver.org <noreply@myfuturesaver.org>',
-      to: `${email}`,
+      to: email,
       subject: 'Thank you for completing our survey!',
       text: `
 You have been entered into our draw for a chance to win:
@@ -78,8 +74,7 @@ The SmartSAVER Team
     try {
       await axios({
         method: 'post',
-        baseURL,
-        url: '/success',
+        url: `${process.env.GATSBY_MAIL_API_URL}/success`,
         data,
       })
     } catch (error) {
