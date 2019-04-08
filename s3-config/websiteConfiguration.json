@@ -38,6 +38,15 @@
         "HostName": "canadaclb.ca",
         "ReplaceKeyPrefixWith": "smartsaver/survey"
       }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "Saver"
+      },
+      "Redirect": {
+        "HostName": "canadaclb.ca",
+        "ReplaceKeyPrefixWith": "saver"
+      }
     }
   ]
 }
