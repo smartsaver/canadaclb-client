@@ -16,7 +16,10 @@ import FaqSection from './Faq'
 const IndexPage = () => {
   return (
     <HomeLayout>
-      <SEO title="Home" keywords={[`resp`, `myfuturesaver`, `education`]} />
+      <SEO
+        title="MyFutureSAVER"
+        keywords={[`resp`, `myfuturesaver`, `education`]}
+      />
       <SmartSaverBanner />
       <ClaimSection />
       <ParticipateSection />
