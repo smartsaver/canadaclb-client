@@ -20,7 +20,7 @@ iii. Share my data anonymously with researchers for the purpose of studying the 
 
 iv. Help me to apply for my child's/children's Canada Learning Bond (CLB) and Canada Education Savings Grant (CESG)
 
-C. I can withdraw my consent any time before March 31, 2019 by writing to SmartSAVER at info@smartsaver.org. 
+C. I can withdraw my consent any time before May 6, 2019 by writing to SmartSAVER at info@smartsaver.org. 
 
 *NOTE:
 
