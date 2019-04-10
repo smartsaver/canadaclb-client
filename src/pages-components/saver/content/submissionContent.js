@@ -11,7 +11,7 @@ By now, you have already:
 2. Completed the RESP paperwork with your financial institution.
 3. Received the Canada Learning Bond in your child’s RESP.
 
-Before we review your eligibility for a gift from SmartSAVER, please answer a few more research questions. This should only take you a few minutes.
+Before we review your eligibility, please answer a few more research questions. This should only take you a few minutes.
 
 __Note__: Please use _the same email address, primary caregiver’s and child’s first and last names_ that you used in the earlier steps of the process. Once you completed the survey a DONE button will appear. Scroll down to the next section below: __Submit Your CLB Statement.__
 

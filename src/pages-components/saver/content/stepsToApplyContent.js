@@ -13,7 +13,7 @@ const step1 = {
   content: processStep(`
 ### 1. Apply
 
-Go on-line or call to start the process of opening your child's RESP and apply for the Canada Learning Bond. You will not be charged any fees can start the account with $0.
+It will take about 10 minutes to complete. You will not be charged any fees. You can start the account with $0.
   `),
 }
 
@@ -21,9 +21,9 @@ const step2 = {
   title: 'Finalize',
   image: step2Logo,
   content: processStep(`
-### 2. Finalize
+### 2. Confirm
 
-Complete the process with your chosen financial institution. You will provide your ID, including you and your child's Social Insurance Number (SIN) and sign your application.
+SmartSAVER will send your information to your chosen bank and you will complete your application with them.
   `),
 }
 
@@ -31,9 +31,9 @@ const step3 = {
   title: 'Confirm',
   image: step3Logo,
   content: processStep(`
-### 3. Confirm
+### 3. Finalize
 
-Show us that you've received the Canada Learning Bond. Submit your RESP or CESP Statement of Account.
+At your bank appointment, you will  show your ID, and your child's Social Insurance Numbers. You will sign your application.
   `),
 }
 
@@ -41,9 +41,9 @@ const step4 = {
   title: 'Receive',
   image: step4Logo,
   content: processStep(`
-### 4. Receive
+### 4. Complete
 
-Celebrate taking these steps to start education savings for your child by accepting a financial bonus from SmartSAVER.
+If you are approved, the Canada Learning Bond will be deposited in your child's new RESP.
   `),
 }
 
