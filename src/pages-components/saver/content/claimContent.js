@@ -7,7 +7,7 @@ const claim = {
 
 2. You could receive $500 from the Government of Canada for your child's education savings!
 
-_* Children who are eligible for the Canada Learning Bond can receive an additional matching grant of 40% for every dollar a parent deposits into their RESPs. That’s a bonus of $144 on top of the $360 that your child will receive into their RESP!_
+_* Children who are eligible for the Canada Learning Bond can receive an additional matching grant of 40% for every dollar a parent deposits into their RESPs._
   `),
 }
 
