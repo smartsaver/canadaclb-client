@@ -15,7 +15,7 @@ Before we review your eligibility, please answer a few more research questions. 
 
 __Note__: Please use _the same email address, primary caregiver’s and child’s first and last names_ that you used in the earlier steps of the process. Once you completed the survey a DONE button will appear. Scroll down to the next section below: __Submit Your CLB Statement.__
 
-Remember! Your participation is entirely voluntary. If you change your mind, please notify us by phone at 1-855-737-7252 or by email at info@smartsaver.org before March 31, 2019.
+Remember! Your participation is entirely voluntary. If you change your mind, please notify us by phone at 1-855-737-7252 or by email at info@smartsaver.org before May 6, 2019.
   `),
   footer: processMarkdown(`
 __Questions?__ Call us at 1-855-737-7252 or email info@smartsaver.org

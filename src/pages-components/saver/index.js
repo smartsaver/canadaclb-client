@@ -6,7 +6,6 @@ import ClaimSection from './Claim'
 import ParticipateSection from './Participate'
 import ListOfFormsSection from './ListOfForms'
 import StepsToApplySection from './StepsToApply'
-import BmoSection from './Bmo'
 import WealthsimpleSection from './Wealthsimple'
 import NoSponsorshipSection from './NoSponorship'
 import SubmissionSurveyForm from './ListOfForms/SubmissionSurveyForm'
@@ -25,7 +24,6 @@ const IndexPage = () => {
       <ParticipateSection />
       <StepsToApplySection />
       <ListOfFormsSection />
-      <BmoSection />
       <WealthsimpleSection />
       <NoSponsorshipSection />
       <SubmissionSurveyForm />
