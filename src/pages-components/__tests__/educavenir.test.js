@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-testing-library'
-import { StaticQuery } from '../../../__mocks__/gatsby'
+import { StaticQuery } from '../../../test-config/__mocks__/gatsby'
 import ImpotExpertPage from '../educavenir/impotexpertreee'
 
 beforeEach(() => {
