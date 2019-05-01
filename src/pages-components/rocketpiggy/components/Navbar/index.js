@@ -1,45 +1,28 @@
 import React, { Component } from 'react'
 import Toolbar from '@material-ui/core/Toolbar'
 import AppBar from '@material-ui/core/AppBar'
-import Drawer from '@material-ui/core/Drawer'
-import IconButton from '@material-ui/core/IconButton'
+import NavbarDrawer from './NavbarDrawer'
 import Button from '@material-ui/core/Button'
-import MenuIcon from '@material-ui/icons/Menu'
-import CloseIcon from '@material-ui/icons/Close'
-import ListItem from '@material-ui/core/ListItem'
-import logo from '../../../../images/rocketpiggy/rocket-piggy-logo.png'
+import NavbarBrand from './NavbarBrand'
+import NavbarBurger from './NavbarBurger'
 import { withStyles } from '@material-ui/core/styles'
-import { List } from '@material-ui/core'
 
 const styles = theme => ({
-  logo: {
-    maxWidth: '6rem',
-  },
-  appBar: {
+  AppBar: {
     backgroundColor: 'white',
     alignItems: 'center',
   },
-  appBar__container: {
+  Container: {
     width: '100%',
     maxWidth: theme.breakpoints.values.lg,
   },
-  appBar__Toolbar: {
+  Toolbar: {
     justifyContent: 'space-between',
   },
-  appBar__Items: {
+  Items: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
       display: 'block',
-    },
-  },
-  drawer: {
-    maxWidth: 300,
-    width: 200,
-  },
-  burger: {
-    display: 'block',
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
     },
   },
 })
@@ -60,44 +43,31 @@ class Navbar extends Component {
   render() {
     const { classes } = this.props
     const { state } = this
+
+    const Container = ({ children }) => (
+      <div className={classes.Container}>{children}</div>
+    )
+
+    const Items = ({ children }) => (
+      <div className={classes.Items}>{children}</div>
+    )
+
     return (
       <nav>
-        <AppBar className={classes.appBar} color="inherit">
-          <div className={classes.appBar__container}>
-            <Toolbar className={classes.appBar__Toolbar}>
-              <a href="./#">
-                <img className={classes.logo} src={logo} alt="Rocket Piggy" />
-              </a>
-              <div className={classes.appBar__Items}>
+        <AppBar className={classes.AppBar} color="inherit">
+          <Container>
+            <Toolbar className={classes.Toolbar}>
+              <NavbarBrand />
+              <Items>
                 <a href="#apply">
                   <Button variant="outlined">Apply</Button>
                 </a>
-              </div>
-              <IconButton
-                className={classes.burger}
-                color="inherit"
-                onClick={this.onBurgerClick}
-              >
-                <MenuIcon />
-              </IconButton>
+              </Items>
+              <NavbarBurger onClick={this.onBurgerClick} />
             </Toolbar>
-          </div>
+          </Container>
         </AppBar>
-        <Drawer
-          anchor="right"
-          variant="temporary"
-          open={state.isDrawerOpen}
-          onClose={this.onDrawerClose}
-        >
-          <List className={classes.drawer}>
-            <ListItem button onClick={this.onDrawerClose}>
-              <CloseIcon onClick={this.onDrawerClose} />
-            </ListItem>
-            <a href="#apply">
-              <ListItem button>Apply</ListItem>
-            </a>
-          </List>
-        </Drawer>
+        <NavbarDrawer open={state.isDrawerOpen} onClose={this.onDrawerClose} />
       </nav>
     )
   }
