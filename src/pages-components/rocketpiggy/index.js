@@ -1,12 +1,12 @@
 import React from 'react'
 import withRoot from '../../theme/withRoot'
-import Typography from '@material-ui/core/Typography'
 import Layout from './Layout'
+import Banner from './RocketPiggyBanner'
 
 const RocketPiggyPage = () => {
   return (
     <Layout>
-      <Typography>Hello World</Typography>
+      <Banner />
     </Layout>
   )
 }
