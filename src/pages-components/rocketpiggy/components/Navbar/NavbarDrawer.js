@@ -1,5 +1,6 @@
 import React from 'react'
 import Drawer from '@material-ui/core/Drawer'
+import Typography from '@material-ui/core/Typography'
 import CloseIcon from '@material-ui/icons/Close'
 import ListItem from '@material-ui/core/ListItem'
 import { withStyles } from '@material-ui/core/styles'
@@ -9,6 +10,9 @@ const styles = () => ({
   drawer: {
     maxWidth: 300,
     width: 200,
+  },
+  drawerLink: {
+    textDecoration: 'none',
   },
 })
 
@@ -25,8 +29,10 @@ function NavbarDrawer(props) {
         <ListItem button onClick={props.onClose}>
           <CloseIcon onClick={props.onClose} />
         </ListItem>
-        <a href="#apply">
-          <ListItem button>Apply</ListItem>
+        <a href="#apply" className={classes.drawerLink}>
+          <Typography variant="body1">
+            <ListItem button>Apply</ListItem>
+          </Typography>
         </a>
       </List>
     </Drawer>
