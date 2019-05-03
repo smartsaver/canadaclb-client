@@ -3,7 +3,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 
 const styles = theme => ({
   root: {
-    padding: '1rem',
+    padding: '3rem 1rem',
     [theme.breakpoints.up('md')]: {
       padding: '3rem 4rem',
     },
@@ -11,8 +11,12 @@ const styles = theme => ({
 })
 
 function Section(props) {
-  const { classes, children } = props
-  return <section className={classes.root}>{children}</section>
+  const { classes, children, className = '' } = props
+  return (
+    <section id={props.name} className={`${classes.root} ${className}`}>
+      {children}
+    </section>
+  )
 }
 
 export default withStyles(styles)(Section)
