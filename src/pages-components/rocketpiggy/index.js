@@ -2,7 +2,7 @@ import React from 'react'
 import withRoot from '../../theme/withRoot'
 import Layout from './Layout'
 import Banner from './RocketPiggyBanner'
-import contentList from './contents'
+import contentList from './content'
 
 const RocketPiggyPage = () => {
   return (
