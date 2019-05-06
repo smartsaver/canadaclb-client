@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-testing-library'
-import { StaticQuery } from '../../../__mocks__/gatsby'
+import { StaticQuery } from '../../../test-config/__mocks__/gatsby'
 import SurveyPage from '../smartsaver/survey'
 import UfileRespPage from '../smartsaver/ufileresp'
 
