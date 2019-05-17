@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Form from '../../../components/Form'
-import FormField from '../../../components/Form/FormFieldControl'
+import Form from '../../../bulma-components/Form'
+import FormField from '../../../bulma-components/Form/FormFieldControl'
 import PropTypes from 'prop-types'
 
 /**

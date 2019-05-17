@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../Section'
-import Notification from '../../../../components/Notification'
+import Notification from '../../../../bulma-components/Notification'
 import termsOfAgreementContent from '../content/termsOfAgreementContent'
 import style from './TermsOfAgreement.module.css'
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SurveyForm from '../../../components/SurveyForm'
+import SurveyForm from '../../../bulma-components/SurveyForm'
 import Section from '../SmartsaverSection'
 import submissionContent from '../content/submissionContent'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from '../../components/Section'
+import Section from '../../bulma-components/Section'
 import theme from './css-themes/Theme.module.css'
 
 const SmartsaverSection = ({ children, name = '', className = '' }) => {

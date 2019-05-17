@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeLayout from './HomeLayout'
-import SEO from '../../components/Seo'
+import SEO from '../../bulma-components/Seo'
 import SmartSaverBanner from './SmartSaverBanner'
 import ClaimSection from './Claim'
 import ParticipateSection from './Participate'

@@ -69,9 +69,8 @@ function ApplySection(props) {
         <Typography
           variant="body1"
           classes={{ root: `${classes.Typography} ${classes.text}` }}
-        >
-          <div dangerouslySetInnerHTML={{ __html: content.text }} />
-        </Typography>
+          dangerouslySetInnerHTML={{ __html: content.text }}
+        />
 
         <iframe
           className={classes.surveyFrame}

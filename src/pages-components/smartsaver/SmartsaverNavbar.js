@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import NavbarItem from '../../components/Navbar/NavbarItem'
+import Navbar from '../../bulma-components/Navbar'
+import NavbarItem from '../../bulma-components/Navbar/NavbarItem'
 import brandLogo from '../../images/smartsaver/smartsaver-logo-small.png'
 import './SmartsaverNavbar.css'
 

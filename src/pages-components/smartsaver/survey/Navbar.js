@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
-import Navbar from '../../../components/Navbar'
-import NavbarItem from '../../../components/Navbar/NavbarItem'
-import NavbarDropdown from '../../../components/Navbar/NavbarDropdown'
+import Navbar from '../../../bulma-components/Navbar'
+import NavbarItem from '../../../bulma-components/Navbar/NavbarItem'
+import NavbarDropdown from '../../../bulma-components/Navbar/NavbarDropdown'
 import brandLogo from '../../../images/smartsaver/smartsaver-logo-small.png'
 import './Navbar.css'
 
