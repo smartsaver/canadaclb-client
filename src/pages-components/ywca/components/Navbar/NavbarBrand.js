@@ -3,14 +3,15 @@ import { withStyles } from '@material-ui/core'
 
 const styles = () => ({
   logo: {
-    maxWidth: '6rem',
+    padding: '.3rem 0',
+    maxWidth: '17rem',
   },
 })
 
 function NavbarBrand(props) {
   const { classes, logo, alt } = props
   return (
-    <a href="./#">
+    <a className={classes.root} href="./#">
       <img className={classes.logo} src={logo} alt={alt} />
     </a>
   )

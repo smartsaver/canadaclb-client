@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import logo from '../../../images/ywca/ywca-logo-white.png'
 import Navbar from '../components/Navbar/index'
 import NavbarBrand from '../components/Navbar/NavbarBrand'
 import Footer from '../components/Footer/index'
@@ -15,7 +16,7 @@ const styles = () => ({
 function Layout({ children }) {
   return (
     <Fragment>
-      <Navbar brand={<NavbarBrand logo={''} alt="YWCA" />} />
+      <Navbar brand={<NavbarBrand logo={logo} alt="YWCA" />} />
 
       {children}
       <Footer />

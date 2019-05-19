@@ -2,14 +2,13 @@ import React, { Component } from 'react'
 import Toolbar from '@material-ui/core/Toolbar'
 import AppBar from '@material-ui/core/AppBar'
 import NavbarDrawer from './NavbarDrawer'
-import Button from '@material-ui/core/Button'
 import NavbarBurger from './NavbarBurger'
-import blue from '@material-ui/core/colors/blue'
+import grey from '@material-ui/core/colors/grey'
 import { withStyles } from '@material-ui/core/styles'
 
 const styles = theme => ({
   AppBar: {
-    backgroundColor: 'white',
+    backgroundColor: grey[900],
     alignItems: 'center',
   },
   Container: {
@@ -23,12 +22,6 @@ const styles = theme => ({
     display: 'none',
     [theme.breakpoints.up('md')]: {
       display: 'block',
-    },
-  },
-  Button: {
-    backgroundColor: blue[700],
-    '&:hover': {
-      backgroundColor: blue[800],
     },
   },
 })
@@ -54,9 +47,9 @@ class Navbar extends Component {
       <div className={classes.Container}>{children}</div>
     )
 
-    const Items = ({ children }) => (
-      <div className={classes.Items}>{children}</div>
-    )
+    // const Items = ({ children }) => (
+    //   <div className={classes.Items}>{children}</div>
+    // )
 
     return (
       <nav>
@@ -64,17 +57,6 @@ class Navbar extends Component {
           <Container>
             <Toolbar className={classes.Toolbar}>
               {props.brand}
-              <Items>
-                <a href="#apply">
-                  <Button
-                    classes={{ containedPrimary: classes.Button }}
-                    variant="contained"
-                    color="primary"
-                  >
-                    Apply
-                  </Button>
-                </a>
-              </Items>
               <NavbarBurger onClick={this.onBurgerClick} />
             </Toolbar>
           </Container>
