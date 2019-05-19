@@ -1,7 +1,9 @@
 import React from 'react'
+import withRoot from '../../theme/withRoot'
+import Layout from './Layout'
 
 function YWCAPage() {
-  return <h1>Hello</h1>
+  return <Layout>Hello</Layout>
 }
 
-export default YWCAPage
+export default withRoot(YWCAPage)
