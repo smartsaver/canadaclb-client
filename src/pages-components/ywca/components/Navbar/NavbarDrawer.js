@@ -30,9 +30,9 @@ function NavbarDrawer(props) {
           <CloseIcon onClick={props.onClose} />
         </ListItem>
         <a href="#apply" className={classes.drawerLink}>
-          <Typography variant="body1">
-            <ListItem button>Apply</ListItem>
-          </Typography>
+          <ListItem button>
+            <Typography variant="body1">Apply</Typography>
+          </ListItem>
         </a>
       </List>
     </Drawer>
