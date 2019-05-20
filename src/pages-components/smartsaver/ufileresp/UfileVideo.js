@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './Section'
-import YoutubeVideoFrame from '../../../components/YoutubeVideoFrame'
+import YoutubeVideoFrame from '../../../bulma-components/YoutubeVideoFrame'
 import style from './UfileVideo.module.css'
 
 const UfileVideo = props => {

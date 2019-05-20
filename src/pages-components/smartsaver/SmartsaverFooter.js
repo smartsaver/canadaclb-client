@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../../components/Footer'
+import Footer from '../../bulma-components/Footer'
 import './SmartsaverFooter.css'
 import footerContent from './content/footerContent'
 

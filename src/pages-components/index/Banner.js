@@ -1,6 +1,6 @@
 import React from 'react'
-import Section from '../../components/Section'
-import Content from '../../components/Content'
+import Section from '../../bulma-components/Section'
+import Content from '../../bulma-components/Content'
 import style from './Banner.module.css'
 import theme from '../smartsaver/css-theme/Theme.module.css'
 

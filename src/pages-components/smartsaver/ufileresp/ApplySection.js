@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './Section'
-import SurveyForm from '../../../components/SurveyForm'
+import SurveyForm from '../../../bulma-components/SurveyForm'
 
 import style from './ApplySection.module.css'
 

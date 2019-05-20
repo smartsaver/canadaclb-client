@@ -1,6 +1,6 @@
 import React from 'react'
 import SmartsaverFooter from '../smartsaver/SmartsaverFooter'
-import Content from '../../components/Content'
+import Content from '../../bulma-components/Content'
 import style from './IndexFooter.module.css'
 
 const IndexFooter = props => {

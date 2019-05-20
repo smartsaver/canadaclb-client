@@ -5,7 +5,7 @@ import Banner from './RocketPiggyBanner'
 import contentList from './content'
 import ApplySection from './ApplySection'
 import VideoSection from './VideoSection'
-import SEO from '../../components/Seo/index'
+import SEO from '../../bulma-components/Seo/index'
 import BlurbSection from './BlurbSection'
 
 const RocketPiggyPage = () => {

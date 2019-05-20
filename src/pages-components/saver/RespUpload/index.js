@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Section from '../SmartsaverSection'
-import Notification from '../../../components/Notification'
+import Notification from '../../../bulma-components/Notification'
 import RespUploadForm from './RespUploadForm'
 import respUploadContent from '../content/respUploadContent'
 import axios from 'axios'

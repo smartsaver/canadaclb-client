@@ -69,6 +69,7 @@ function ApplySection(props) {
         <Typography
           variant="body1"
           classes={{ root: `${classes.Typography} ${classes.text}` }}
+          component="div"
         >
           <div dangerouslySetInnerHTML={{ __html: content.text }} />
         </Typography>

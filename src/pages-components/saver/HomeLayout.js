@@ -4,7 +4,7 @@ import Navbar from './SmartsaverNavbar'
 import 'bulma/css/bulma.css'
 import './HomeLayout.css'
 import Footer from './SmartsaverFooter'
-import FontAwesomeScript from '../../components/scripts/FontAwesome'
+import FontAwesomeScript from '../../bulma-components/scripts/FontAwesome'
 
 const HomeLayout = ({ children }) => {
   return (

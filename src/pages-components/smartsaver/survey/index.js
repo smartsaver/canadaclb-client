@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import IntroSection from './IntroSection'
-import SEO from '../../../components/Seo/SeoWithoutTitleTemplate'
+import SEO from '../../../bulma-components/Seo/SeoWithoutTitleTemplate'
 import TermsAndSurveysSection from './TermsAndSurveys'
 import ThankyouSection from './Thankyou'
 import surveySeoContent from './content/surveySeoContent'
 import SmartsaverNavbar from '../SmartsaverNavbar'
-import NavbarItem from '../../../components/Navbar/NavbarItem'
-import NavbarDropdown from '../../../components/Navbar/NavbarDropdown'
-import Layout from '../../../components/Layout'
+import NavbarItem from '../../../bulma-components/Navbar/NavbarItem'
+import NavbarDropdown from '../../../bulma-components/Navbar/NavbarDropdown'
+import Layout from '../../../bulma-components/Layout'
 import SmartsaverFooter from '../SmartsaverFooter'
 
 const Navbar = () => {

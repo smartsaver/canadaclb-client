@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import Section from './IndexSection'
-import Content from '../../components/Content'
+import Content from '../../bulma-components/Content'
 import text from '../smartsaver/css-theme/Text.module.css'
 
 const IntroSection = props => {

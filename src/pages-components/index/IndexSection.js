@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from '../../components/Section'
+import Section from '../../bulma-components/Section'
 import style from './IndexSection.module.css'
 
 const IndexSection = ({ children, name = '', className = '' }) => {
