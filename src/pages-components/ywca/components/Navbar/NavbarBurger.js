@@ -10,6 +10,7 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       display: 'none',
     },
+    color: 'white',
   },
 })
 
