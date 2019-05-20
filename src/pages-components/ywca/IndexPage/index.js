@@ -9,7 +9,7 @@ const { videoSectionContent } = contentList
 function HomePage() {
   return (
     <Fragment>
-      <BannerSection />
+      <BannerSection content={contentList.bannerContent} />
       <VideoSection
         content={contentList.videoSectionContent}
         url={videoSectionContent.embedUrl}
