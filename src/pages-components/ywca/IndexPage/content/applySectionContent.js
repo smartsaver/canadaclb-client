@@ -11,6 +11,9 @@ If your child was born in 2004 or later and your yearly family income is $46,605
 *for three kids or less. For families with more than 3 children [click here.](${canadaUrl})
   `),
   embedUrl: 'https://mysmartfuture.org/signup/ywca',
+  footerText: marked(
+    'Brought to you by the YWCA and SmartSAVER. For more information, contact us at 1888-RESP-CLB or email info@smartsaver.org.'
+  ),
 }
 
 export default applySectionContent

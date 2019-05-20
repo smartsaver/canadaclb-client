@@ -21,6 +21,7 @@ const styles = theme => ({
   },
   frame: {
     width: '100%',
+    margin: '1rem 0',
     background: 'white',
     height: '100rem',
     [theme.breakpoints.up('sm')]: {
@@ -30,7 +31,7 @@ const styles = theme => ({
 })
 
 function ApplySection(props) {
-  const { classes, content = { title: '', text: '' } } = props
+  const { classes, content = { title: '', text: '', footerText: '' } } = props
   return (
     <Section name="apply">
       <div className={classes.container}>
@@ -47,6 +48,11 @@ function ApplySection(props) {
           src={content.embedUrl}
           frameBorder="0"
           title="StartMyResp Application"
+        />
+        <Typograpy
+          variant="body1"
+          classes={{ body1: classes.text }}
+          dangerouslySetInnerHTML={{ __html: content.footerText }}
         />
       </div>
     </Section>
