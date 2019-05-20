@@ -47,6 +47,15 @@
         "HostName": "canadaclb.ca",
         "ReplaceKeyPrefixWith": "saver"
       }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "YWCA"
+      },
+      "Redirect": {
+        "HostName": "canadaclb.ca",
+        "ReplaceKeyPrefixWith": "ywca"
+      }
     }
   ]
 }
