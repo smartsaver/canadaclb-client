@@ -16,10 +16,13 @@ const styles = theme => ({
   },
   title: {
     paddingBottom: '1rem',
-    fontSize: '1.5rem',
+    fontSize: '1.3rem',
     fontWeight: 400,
-    lineHeight: '1.9rem',
+    lineHeight: '1.7rem',
     color: 'white',
+    [theme.breakpoints.up('md')]: {
+      margin: '0 4rem',
+    },
   },
   container: {
     maxWidth: theme.breakpoints.values.xl,
