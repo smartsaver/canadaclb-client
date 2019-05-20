@@ -40,9 +40,11 @@ function ApplySection(props) {
         </Typograpy>
         <Typograpy
           variant="body1"
+          component="div"
           classes={{ body1: classes.text }}
-          dangerouslySetInnerHTML={{ __html: content.text }}
-        />
+        >
+          <div dangerouslySetInnerHTML={{ __html: content.text }} />
+        </Typograpy>
         <iframe
           className={classes.frame}
           src={content.embedUrl}
@@ -51,9 +53,11 @@ function ApplySection(props) {
         />
         <Typograpy
           variant="body1"
+          component="div"
           classes={{ body1: classes.text }}
-          dangerouslySetInnerHTML={{ __html: content.footerText }}
-        />
+        >
+          <div dangerouslySetInnerHTML={{ __html: content.footerText }} />
+        </Typograpy>
       </div>
     </Section>
   )
