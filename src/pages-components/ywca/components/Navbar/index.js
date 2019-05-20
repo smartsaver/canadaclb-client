@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Toolbar from '@material-ui/core/Toolbar'
+import Button from '@material-ui/core/Button'
 import AppBar from '@material-ui/core/AppBar'
 import NavbarDrawer from './NavbarDrawer'
 import NavbarBurger from './NavbarBurger'
@@ -47,9 +48,9 @@ class Navbar extends Component {
       <div className={classes.Container}>{children}</div>
     )
 
-    // const Items = ({ children }) => (
-    //   <div className={classes.Items}>{children}</div>
-    // )
+    const Items = ({ children }) => (
+      <div className={classes.Items}>{children}</div>
+    )
 
     return (
       <nav>
@@ -58,6 +59,11 @@ class Navbar extends Component {
             <Toolbar className={classes.Toolbar}>
               {props.brand}
               <NavbarBurger onClick={this.onBurgerClick} />
+              <Items>
+                <a href="./#apply">
+                  <Button variant="contained">Apply</Button>
+                </a>
+              </Items>
             </Toolbar>
           </Container>
         </AppBar>
