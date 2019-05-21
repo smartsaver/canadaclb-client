@@ -2,6 +2,7 @@ import React from 'react'
 import withStyles from 'react-jss'
 import bannerPhoto from '../../../images/ywca/graduation-girl.jpg'
 import Typography from '@material-ui/core/Typography'
+import lightBlue from '@material-ui/core/colors/lightBlue'
 
 const styles = theme => ({
   Container: {
@@ -18,14 +19,14 @@ const styles = theme => ({
     },
   },
   textContainer: {
-    backgroundColor: 'rgb(223, 209, 138)',
+    backgroundColor: lightBlue[50],
   },
   textSection: {
     display: 'flex',
     alignItems: 'center',
     margin: '0 auto',
     maxWidth: theme.breakpoints.values.xl,
-    minHeight: '18rem',
+    minHeight: '13rem',
     padding: '3rem 1rem',
     [theme.breakpoints.up('md')]: {
       padding: '3rem 4rem',
