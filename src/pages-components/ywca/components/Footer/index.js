@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography'
 import Link from '@material-ui/core/Link'
 import Section from '../Section'
 import withStyles from '@material-ui/core/styles/withStyles'
+import grey from '@material-ui/core/colors/grey'
 
 const styles = () => ({
   root: {
@@ -10,6 +11,7 @@ const styles = () => ({
     flexDirection: 'column',
     textAlign: 'center',
     minHeight: '15rem',
+    backgroundColor: grey[200],
   },
   section: {
     flex: 1,
