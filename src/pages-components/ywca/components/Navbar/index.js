@@ -4,12 +4,11 @@ import Button from '@material-ui/core/Button'
 import AppBar from '@material-ui/core/AppBar'
 import NavbarDrawer from './NavbarDrawer'
 import NavbarBurger from './NavbarBurger'
-import grey from '@material-ui/core/colors/grey'
 import { withStyles } from '@material-ui/core/styles'
+import blue from '@material-ui/core/colors/blue'
 
 const styles = theme => ({
   AppBar: {
-    backgroundColor: grey[900],
     alignItems: 'center',
   },
   Container: {
@@ -23,6 +22,12 @@ const styles = theme => ({
     display: 'none',
     [theme.breakpoints.up('md')]: {
       display: 'block',
+    },
+  },
+  Button: {
+    backgroundColor: blue[700],
+    '&:hover': {
+      backgroundColor: blue[800],
     },
   },
 })
@@ -61,7 +66,15 @@ class Navbar extends Component {
               <NavbarBurger onClick={this.onBurgerClick} />
               <Items>
                 <a href="./#apply">
-                  <Button variant="contained">Apply</Button>
+                  <Button
+                    classes={{
+                      root: classes.Button,
+                    }}
+                    color="primary"
+                    variant="contained"
+                  >
+                    Apply
+                  </Button>
                 </a>
               </Items>
             </Toolbar>
