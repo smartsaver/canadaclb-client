@@ -3,6 +3,7 @@ import BannerSection from './BannerSection'
 import VideoSection from './VideoSection'
 import contentList from './content'
 import ApplySection from './ApplySection'
+import YWCASurveySection from './YWCASurveySection'
 
 const { videoSectionContent } = contentList
 
@@ -14,6 +15,7 @@ function HomePage() {
         content={contentList.videoSectionContent}
         url={videoSectionContent.embedUrl}
       />
+      <YWCASurveySection url="https://www.surveymonkey.com/r/2JPD69D" />
       <ApplySection content={contentList.applySectionContent} />
     </Fragment>
   )
