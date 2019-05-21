@@ -7,7 +7,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 const styles = theme => ({
   root: {
     textAlign: 'center',
-    backgroundColor: grey[800],
+    backgroundColor: grey[200],
   },
   frame: {
     width: '100%',
@@ -19,7 +19,6 @@ const styles = theme => ({
     fontSize: '1.3rem',
     fontWeight: 400,
     lineHeight: '1.7rem',
-    color: 'white',
     [theme.breakpoints.up('md')]: {
       margin: '0 4rem',
     },
