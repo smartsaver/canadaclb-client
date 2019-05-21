@@ -2,6 +2,7 @@ import React from 'react'
 import withStyles from 'react-jss'
 import bannerPhoto from '../../../images/ywca/graduation-girl.jpg'
 import Typography from '@material-ui/core/Typography'
+import lightBlue from '@material-ui/core/colors/lightBlue'
 
 const styles = theme => ({
   Container: {
@@ -18,7 +19,7 @@ const styles = theme => ({
     },
   },
   textContainer: {
-    backgroundColor: 'rgb(223, 209, 138)',
+    backgroundColor: lightBlue[50],
   },
   textSection: {
     display: 'flex',
