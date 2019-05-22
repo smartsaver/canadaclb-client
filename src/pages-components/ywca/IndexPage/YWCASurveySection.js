@@ -5,7 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 const styles = {
   frame: {
     width: '100%',
-    minHeight: '90rem',
+    minHeight: '35rem',
   },
 }
 

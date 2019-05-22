@@ -23,10 +23,7 @@ const styles = theme => ({
     width: '100%',
     margin: '1rem 0',
     background: 'white',
-    height: '100rem',
-    [theme.breakpoints.up('sm')]: {
-      height: '93rem',
-    },
+    minHeight: '43rem',
   },
 })
 
