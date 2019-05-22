@@ -4,12 +4,14 @@ import VideoSection from './VideoSection'
 import contentList from './content'
 import ApplySection from './ApplySection'
 import YWCASurveySection from './YWCASurveySection'
+import SEO from '../../../bulma-components/Seo'
 
 const { videoSectionContent } = contentList
 
 function HomePage() {
   return (
     <Fragment>
+      <SEO title="YWCA" />
       <BannerSection content={contentList.bannerContent} />
       <VideoSection
         content={contentList.videoSectionContent}
