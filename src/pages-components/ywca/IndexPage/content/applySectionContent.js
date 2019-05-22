@@ -4,11 +4,13 @@ const canadaUrl =
   'https://www.canada.ca/en/employment-social-development/services/student-financial-aid/education-savings/resp/resp-promoters/bulletin/notice-2018-772.html'
 
 const applySectionContent = {
-  title: 'Apply for your child’s Canada Learning Bond Today!',
+  title: '2. Application',
   text: marked(`
+Apply for your child’s Canada Learning Bond Today!
+
 If your child was born in 2004 or later and your yearly family income is $46,605* or less, you can start saving for your child’s education today through the CLB at no additional cost or requirement to use your own money.
 
-*for three kids or less. For families with more than 3 children [click here.](${canadaUrl})
+_*for three kids or less. For families with more than 3 children [click here.](${canadaUrl})_
   `),
   embedUrl: 'https://mysmartfuture.org/signup/ywca',
   footerText: marked(
