@@ -30,7 +30,7 @@ const styles = theme => ({
 function ApplySection(props) {
   const { classes, content = { title: '', text: '', footerText: '' } } = props
   return (
-    <Section name="apply">
+    <Section name="resp">
       <div className={classes.container}>
         <Typograpy classes={{ root: classes.title }} variant="h2">
           {content.title}
