@@ -17,11 +17,13 @@ function HomePage() {
         content={contentList.videoSectionContent}
         url={videoSectionContent.embedUrl}
       />
-      <YWCASurveySection
-        content={contentList.ywcaSurveySectionContent}
-        url="https://www.surveymonkey.com/r/2JPD69D"
-      />
-      <ApplySection content={contentList.applySectionContent} />
+      <div id="apply">
+        <YWCASurveySection
+          content={contentList.ywcaSurveySectionContent}
+          url="https://www.surveymonkey.com/r/2JPD69D"
+        />
+        <ApplySection content={contentList.applySectionContent} />
+      </div>
     </Fragment>
   )
 }

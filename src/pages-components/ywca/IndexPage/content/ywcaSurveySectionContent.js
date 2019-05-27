@@ -7,7 +7,7 @@ const ywcaSurveySectionContent = {
 You must complete the survey in order to apply below.
   `),
   footerText: vanillaMarked(`
-Did you complete the survey by clicking the __DONE__ button? Scroll down to the next section below: [__RESP and CLB application__](./#apply)
+Did you complete the survey by clicking the __DONE__ button? Scroll down to the next section below: [__RESP and CLB application__](./#resp)
   `),
 }
 
