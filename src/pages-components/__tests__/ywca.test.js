@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-testing-library'
+import { render } from '@testing-library/react'
 import YWCAPage from '../ywca'
 import { StaticQuery } from '../../../test-config/__mocks__/gatsby'
 
