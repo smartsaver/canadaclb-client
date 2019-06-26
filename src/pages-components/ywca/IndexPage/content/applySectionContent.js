@@ -1,7 +1,7 @@
 import marked from '../../../../libs/marked'
 
 const canadaUrl =
-  'https://www.canada.ca/en/employment-social-development/services/student-financial-aid/education-savings/resp/resp-promoters/bulletin/notice-2018-772.html'
+  'https://www.canada.ca/en/employment-social-development/services/learning-bond/eligibility.html'
 
 const applySectionContent = {
   title: '2. Application',
