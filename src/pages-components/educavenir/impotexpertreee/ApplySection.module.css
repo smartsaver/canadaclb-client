@@ -1,17 +1,3 @@
 .ApplySection .SurveyFrame {
-  height: 100rem;
-}
-
-/* lessen frame height on tablet and above */
-@media (min-width: 769px) {
-  .ApplySection .SurveyFrame {
-    height: 89rem;
-  }
-}
-
-/* lessen frame height on widescreen and above */
-@media (min-width: 1216px) {
-  .ApplySection .SurveyFrame {
-    height: 85rem;
-  }
+  height: 43rem;
 }

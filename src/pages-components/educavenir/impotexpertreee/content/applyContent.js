@@ -1,7 +1,7 @@
 import { processMarkdown } from './index'
 import marked from 'marked'
 
-const embedUrl = 'https://www.smartsaver.org/reeeussite/?ufile'
+const embedUrl = 'https://moneducavenir.org/ufile'
 
 const applyContent = {
   title:
