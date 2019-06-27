@@ -1,6 +1,6 @@
 import { processMarkdown } from './index'
 
-const embedUrl = 'https://www.smartsaver.org/startmyresp/?ufile'
+const embedUrl = 'https://MySMartFUTURE.org/ufile'
 
 const applyContent = {
   title: 'Apply For Your Child’s Canada Learning Bond Today!',
