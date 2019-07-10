@@ -11,7 +11,15 @@
 
 [[redirects]]
   from="/SmartSAVER/*"
-  to="smartsaver/:splat"
+  to="/smartsaver/:splat"
+
+[[redirects]]
+  from="/SMARTSAVER"
+  to="/smartsaver"
+
+[[redirects]]
+  from="/SMARTSAVER/*"
+  to="/smartsaver/:splat"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app. 
   ## Not needed for static site generators.
