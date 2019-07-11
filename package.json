@@ -21,8 +21,8 @@
     "jss": "^9.8.7",
     "marked": "^0.6.2",
     "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-jss": "^8.6.1"
   },
@@ -40,14 +40,19 @@
     "format": "prettier --write \"src/**/*.js\"",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "deploy:dev": "netlify deploy --dir public --prod"
+    "deploy:dev": "netlify deploy --dir public --prod",
+    "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.5.4",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/react": "^5.1.9",
     "@testing-library/react": "^8.0.1",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.6",
     "babel-preset-gatsby": "^0.1.2",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
