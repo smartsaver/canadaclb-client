@@ -3,7 +3,10 @@ import Form from '../../../../../bulma-components/Form'
 import FieldControl from '../../../../../bulma-components/Form/FormFieldControl'
 import axios from 'axios'
 import PropTypes from 'prop-types'
-import { mailchimp } from '../../../configs'
+import { mailchimp } from '../../../mailChimpConfig'
+import config from '../../../../../config'
+
+const MAIL_API_URL = `${config.mailApiURL}/api/canadaclb/mail`
 
 class EmailSurveyForm extends Component {
   state = {
@@ -54,7 +57,7 @@ class EmailSurveyForm extends Component {
     return new Promise((resolve, reject) => {
       axios({
         method: 'post',
-        url: `${process.env.GATSBY_MAIL_API_URL}/subscriber/new`,
+        url: `${MAIL_API_URL}/subscriber/new`,
         data: { email, listId },
       })
         .then(success => {
