@@ -5,6 +5,34 @@
   functions = "functions"
   publish = "public"
 
+[[redirects]]
+  from="/SmartSAVER"
+  to="smartsaver"
+
+[[redirects]]
+  from="/SmartSAVER/*"
+  to="/smartsaver/:splat"
+
+[[redirects]]
+  from="/SMARTSAVER"
+  to="/smartsaver"
+
+[[redirects]]
+  from="/SMARTSAVER/*"
+  to="/smartsaver/:splat"
+
+[[redirects]]
+  from="/SmartSAVER/Survey"
+  to="/smartsaver/survey"
+
+[[redirects]]
+  from="/Saver"
+  to="/saver"
+
+[[redirects]]
+  from="/YWCA"
+  to="ywca"
+
   ## Uncomment to use this redirect for Single Page Applications like create-react-app. 
   ## Not needed for static site generators.
   #[[redirects]]

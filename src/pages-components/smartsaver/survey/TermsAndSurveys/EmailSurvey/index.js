@@ -6,6 +6,9 @@ import EmailSurveyForm from './EmailSurveyForm'
 import Notification from '../../../../../bulma-components/Notification'
 import axios from 'axios'
 import PropTypes from 'prop-types'
+import config from '../../../../../config'
+
+const MAIL_API_URL = `${config.mailApiURL}/api/canadaclb/mail`
 
 class EmailSurvey extends Component {
   state = {
@@ -41,7 +44,7 @@ email: ${email}
     try {
       await axios({
         method: 'post',
-        url: `${process.env.GATSBY_MAIL_API_URL}/success`,
+        url: `${MAIL_API_URL}/success`,
         data,
       })
     } catch (error) {
@@ -74,7 +77,7 @@ The SmartSAVER Team
     try {
       await axios({
         method: 'post',
-        url: `${process.env.GATSBY_MAIL_API_URL}/success`,
+        url: `${MAIL_API_URL}/success`,
         data,
       })
     } catch (error) {

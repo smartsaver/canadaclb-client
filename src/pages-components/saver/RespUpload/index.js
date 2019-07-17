@@ -4,8 +4,11 @@ import Notification from '../../../bulma-components/Notification'
 import RespUploadForm from './RespUploadForm'
 import respUploadContent from '../content/respUploadContent'
 import axios from 'axios'
+import config from '../../../config'
 
 import './RespUpload.css'
+
+const MAIL_API_URL = `${config.mailApiURL}/api/canadaclb/smartsaver/mail`
 
 /* eslint-disable no-undef, no-console, jsx-a11y/label-has-for */
 class RespSubmission extends Component {
@@ -51,9 +54,7 @@ Thank you.`
   }
 
   sendEmailWithAttachment = async senderDetails => {
-    const url = `${
-      process.env.GATSBY_MYFUTURESAVER_SERVER_URL
-    }/api/canadaclb/smartsaver/mail/clb-statement`
+    const url = `${MAIL_API_URL}/clb-statement`
     return await axios({
       method: 'post',
       url,
@@ -65,9 +66,7 @@ Thank you.`
   }
 
   sendSuccessEmail = async senderDetails => {
-    const url = `${
-      process.env.GATSBY_MYFUTURESAVER_SERVER_URL
-    }/api/canadaclb/smartsaver/mail/clb-statement-success`
+    const url = `${MAIL_API_URL}/clb-statement-success`
     const { email } = senderDetails
     const data = {
       from: 'Myfuturesaver.org <noreply@myfuturesaver.org>',
