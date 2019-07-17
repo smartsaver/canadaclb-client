@@ -9,6 +9,7 @@ import config from '../../../config'
 import './RespUpload.css'
 
 const MAIL_API_URL = `${config.mailApiURL}/api/canadaclb/smartsaver/mail`
+const MYFUTURESAVER_EMAIL = config.orgEmail
 
 /* eslint-disable no-undef, no-console, jsx-a11y/label-has-for */
 class RespSubmission extends Component {
@@ -33,7 +34,7 @@ class RespSubmission extends Component {
     // make email template based on FormData API
     const { name, email, kidsNames, respStatementType, files } = jsonData
     const from = 'Myfuturesaver.org <noreply@myfuturesaver.org>'
-    const to = process.env.GATSBY_MYFUTURESAVER_EMAIL
+    const to = MYFUTURESAVER_EMAIL
     const subject = 'FutureSAVER Statement Submission'
     const text = `A FutureSAVER applicant has submitted their CLB Statement
 

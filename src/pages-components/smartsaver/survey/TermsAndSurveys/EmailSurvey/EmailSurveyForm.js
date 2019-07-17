@@ -3,7 +3,7 @@ import Form from '../../../../../bulma-components/Form'
 import FieldControl from '../../../../../bulma-components/Form/FormFieldControl'
 import axios from 'axios'
 import PropTypes from 'prop-types'
-import { mailchimp } from '../../../mailChimpConfig'
+import { mailchimp } from '../../config/mailChimpConfig'
 import config from '../../../../../config'
 
 const MAIL_API_URL = `${config.mailApiURL}/api/canadaclb/mail`
