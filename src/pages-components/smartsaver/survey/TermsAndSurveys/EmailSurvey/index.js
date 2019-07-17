@@ -9,6 +9,7 @@ import PropTypes from 'prop-types'
 import config from '../../../../../config'
 
 const MAIL_API_URL = `${config.mailApiURL}/api/canadaclb/mail`
+const MYFUTURESAVER_EMAIL = config.orgEmail
 
 class EmailSurvey extends Component {
   state = {
@@ -32,7 +33,7 @@ class EmailSurvey extends Component {
     /* eslint-disable no-undef, no-console */
     const data = {
       from: 'Myfuturesaver.org <noreply@myfuturesaver.org>',
-      to: process.env.GATSBY_MYFUTURESAVER_EMAIL,
+      to: MYFUTURESAVER_EMAIL,
       subject: 'Past StartMyRESP Applicant Survey',
       text: `
 A past StartMyRESP applicant has submitted their survey on CanadaCLB.ca/SmartSAVER/survey
