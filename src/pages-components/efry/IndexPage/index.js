@@ -3,6 +3,7 @@ import Layout from '../Layout'
 import SEO from '../../components/SEO'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import withRoot from '../../../theme/withRoot'
+import Banner from './Banner'
 
 const theme = createMuiTheme({
   typography: {
@@ -27,7 +28,9 @@ function EfryPage() {
     <MuiThemeProvider theme={theme}>
       <Layout>
         <SEO title="Efry" />
-        <h1>Hello efry</h1>
+        <main>
+          <Banner />
+        </main>
       </Layout>
     </MuiThemeProvider>
   )
