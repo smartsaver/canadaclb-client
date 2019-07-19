@@ -6,6 +6,9 @@ import marked from '../../../libs/marked'
 import logo from '../../../images/efry/efry-logo-small.jpg'
 
 const styles = theme => ({
+  logo: {
+    width: '100%',
+  },
   contact: {
     backgroundColor: '#ffffff',
   },
@@ -62,7 +65,7 @@ function Contact(props) {
       <Section name="contact" className={classes.contact}>
         <Grid container alignItems="center">
           <Grid item md={6}>
-            <img src={logo} alt="Efry" />
+            <img className={classes.logo} src={logo} alt="Efry" />
           </Grid>
           <Grid item md={6}>
             <div
