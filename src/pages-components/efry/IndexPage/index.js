@@ -4,10 +4,17 @@ import SEO from '../../components/SEO'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import withRoot from '../../../theme/withRoot'
 import Banner from './Banner'
+import Promotion from './Promotion'
+import Apply from './Apply'
+import Contact from './Contact'
 
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
+    h2: {
+      fontSize: 32,
+      fontWeight: 400,
+    },
   },
   palette: {
     primary: {
@@ -27,9 +34,17 @@ function EfryPage() {
   return (
     <MuiThemeProvider theme={theme}>
       <Layout>
-        <SEO title="Efry" />
+        <SEO title="Efry" lang="en">
+          <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+          ></script>
+        </SEO>
         <main>
           <Banner />
+          <Promotion />
+          <Apply />
+          <Contact />
         </main>
       </Layout>
     </MuiThemeProvider>

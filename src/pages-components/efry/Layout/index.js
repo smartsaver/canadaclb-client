@@ -20,7 +20,7 @@ const styles = () => ({
 function Layout(props) {
   const { classes } = props
   const ApplyButton = () => (
-    <a href="/efry#apply" className={classes.linkButton}>
+    <a href="./#apply" className={classes.linkButton}>
       <Button variant="contained" color="secondary">
         Apply
       </Button>

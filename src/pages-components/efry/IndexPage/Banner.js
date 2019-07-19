@@ -5,8 +5,11 @@ import withStyles from '@material-ui/core/styles/withStyles'
 
 const styles = () => ({
   root: {
-    minHeight: '43rem',
+    backgroundColor: '#ffffff',
     marginTop: '3rem',
+  },
+  bannerImage: {
+    width: '100%',
   },
 })
 
@@ -14,7 +17,11 @@ function Banner(props) {
   const { classes } = props
   return (
     <section className={classes.root}>
-      <img src={bannerImage} alt="Efry Banner" />
+      <img
+        className={classes.bannerImage}
+        src={bannerImage}
+        alt="Efry Banner"
+      />
       <Typography variant="srOnly">
         <h1>
           Make your child&apos;s Future Bright with <strong>FREE</strong>
