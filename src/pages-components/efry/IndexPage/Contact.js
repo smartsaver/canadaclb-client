@@ -101,13 +101,21 @@ EFry staff are available to help you with every step of the process, so you can 
               variant="body1"
               className={`${classes.barText} ${classes.socialLinks}`}
             >
-              <a href="https://www.facebook.com/EFryVancouver/">
+              <a
+                href="https://www.facebook.com/EFryVancouver/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Facebook{' '}
                 <span className={classes.socialIcon}>
                   <i className="fab fa-facebook-square" />
                 </span>
               </a>{' '}
-              <a href="ttps://twitter.com/EFryVancouver">
+              <a
+                href="ttps://twitter.com/EFryVancouver"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Twitter{' '}
                 <span className={classes.socialIcon}>
                   <i className="fab fa-twitter-square" />
