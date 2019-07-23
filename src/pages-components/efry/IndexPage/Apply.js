@@ -4,7 +4,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import { Typography } from '@material-ui/core'
 import marked from '../../../libs/marked'
 
-const SMARTSAVER_EMBED_URL = 'https://mysmartfuture.org'
+const SMARTSAVER_EMBED_URL = 'https://mysmartfuture.org/efry'
 
 const styles = () => ({
   frame: {
