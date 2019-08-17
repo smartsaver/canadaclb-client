@@ -57,12 +57,12 @@ class Navbar extends Component {
 
   renderDrawer = () => {
     const { props, state } = this
-    return !props.renderDrawer
-      ? null
-      : props.renderDrawer({
+    return props.renderDrawer
+      ? props.renderDrawer({
           isOpen: state.isDrawerOpen,
           closeDrawer: this.closeDrawer,
         })
+      : null
   }
 
   render() {
