@@ -82,12 +82,7 @@ EFry staff are available to help you with every step of the process, so you can 
         </Grid>
       </Section>
       <section className={classes.bar}>
-        <Grid
-          className={classes.barContainer}
-          container
-          alignItems="center"
-          spacing={1}
-        >
+        <Grid className={classes.barContainer} container alignItems="center">
           <Grid item sm={12} md={8}>
             <Typography variant="body1" className={classes.barText}>
               Learn more about EFry’s programs and services at{' '}
