@@ -1,9 +1,9 @@
-import React from 'react'
-import { Typography } from '@material-ui/core'
+import React, { useState } from 'react'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
+// import SEO from '../../components/SEO'
 import Layout from '../Layout'
-import Section from '../../components/Section'
 import withRoot from '../../../theme/withRoot'
+import Banner from './Banner'
 
 const theme = createMuiTheme({
   typography: {
@@ -16,16 +16,19 @@ const theme = createMuiTheme({
       fontSize: 32,
       fontWeight: 400,
     },
+    body1: {
+      fontSize: 18,
+    },
   },
 })
 
 function IndexPage() {
+  const [locale] = useState('en')
   return (
     <MuiThemeProvider theme={theme}>
+      {/* <SEO lang={locale} title="Tax Sticky" /> */}
       <Layout>
-        <Section>
-          <Typography variant="h1">Hello World</Typography>
-        </Section>
+        <Banner locale={locale} />
       </Layout>
     </MuiThemeProvider>
   )
