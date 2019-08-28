@@ -31,11 +31,9 @@ const styles = theme => ({
 
 function Section(props) {
   const { classes } = props
+  const className = props.className || ''
   return (
-    <section
-      id={props.name}
-      className={`${classes.root} ${props.className || ''}`}
-    >
+    <section id={props.name} className={`${classes.root} ${className}`}>
       <Typography
         paragraph
         variant="body1"
