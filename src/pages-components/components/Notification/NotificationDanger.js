@@ -5,7 +5,7 @@ import grey from '@material-ui/core/colors/grey'
 import IconButton from '@material-ui/core/IconButton'
 import CancelRoundedIcon from '@material-ui/icons/CancelRounded'
 
-const styles = {
+const styles = theme => ({
   root: {
     position: 'relative',
     top: 0,
@@ -16,6 +16,10 @@ const styles = {
     minHeight: '2rem',
     padding: '1rem',
     background: red[100],
+    [theme.breakpoints.up('md')]: {
+      paddingLeft: '3rem',
+      paddingRight: '3rem',
+    },
   },
   closeButton: {
     position: 'absolute',
@@ -26,7 +30,7 @@ const styles = {
     color: grey[600],
     opacity: 0.7,
   },
-}
+})
 
 function NotificationDanger(props) {
   const { classes, className, children } = props
