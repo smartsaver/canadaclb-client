@@ -2,6 +2,7 @@ import React from 'react'
 import Section from '../components/Section'
 import Typography from '@material-ui/core/Typography'
 import withStyles from '@material-ui/core/styles/withStyles'
+import Box from '../../components/Box'
 
 const styles = {
   title: {
@@ -32,12 +33,7 @@ function YWCASurveySection(props) {
       >
         <div dangerouslySetInnerHTML={{ __html: content.text }} />
       </Typography>
-      <iframe
-        className={classes.frame}
-        src={props.url}
-        frameBorder="0"
-        title="YWCA Survey"
-      />
+      <Box />
       <Typography
         variant="body1"
         component="div"

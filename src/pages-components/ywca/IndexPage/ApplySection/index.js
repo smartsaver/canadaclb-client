@@ -3,6 +3,7 @@ import Section from '../../components/Section'
 import Typograpy from '@material-ui/core/Typography'
 import Overlay from './Overlay'
 import withStyles from '@material-ui/core/styles/withStyles'
+import Box from '../../../components/Box'
 
 const styles = theme => ({
   container: {
@@ -25,6 +26,9 @@ const styles = theme => ({
     background: 'white',
     minHeight: '43rem',
   },
+  box: {
+    marginBottom: '1rem',
+  },
 })
 
 function ApplySection(props) {
@@ -42,14 +46,7 @@ function ApplySection(props) {
         >
           <div dangerouslySetInnerHTML={{ __html: content.text }} />
         </Typograpy>
-        <Overlay>
-          <iframe
-            className={classes.frame}
-            src={content.embedUrl}
-            frameBorder="0"
-            title="StartMyResp Application"
-          />
-        </Overlay>
+        <Box className={classes.box} />
         <Typograpy
           variant="body1"
           component="div"
