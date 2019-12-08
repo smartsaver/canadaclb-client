@@ -32,6 +32,10 @@ const styles = theme => ({
   },
 })
 
+/**
+ * @param {String} appBarClassName - appbar css overrides. I use this to override position fixed.
+ */
+
 class Navbar extends Component {
   state = {
     isDrawerOpen: false,
@@ -59,7 +63,10 @@ class Navbar extends Component {
 
     return (
       <nav>
-        <AppBar className={classes.AppBar} color="inherit">
+        <AppBar
+          className={`${classes.AppBar} ${props.appBarClassName || ''}`}
+          color="inherit"
+        >
           <Container>
             <Toolbar className={classes.Toolbar}>
               {props.brand}
