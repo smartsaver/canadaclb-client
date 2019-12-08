@@ -24,7 +24,7 @@ const styles = () => ({
   dangerNotificationText: {
     color: red[900],
     '& a': {
-      color: red[400],
+      color: red[800],
       textDecoration: 'underline',
       fontWeight: 700,
     },
